@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rota Livre</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logomarca Rota Livre">
+        </div>
+        <nav>
+            <div class="list-menu">
+                <ul>
+                    <li>
+                        <a href="#">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#">SOBRE NóS</a>
+                    </li>
+                    <li>
+                        <a href="#">SERVIÇOS</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTATO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+        <!-- CÓDIGO PARA INCORPORAR A FUNÇÃO LIBRAS NA PAGINA -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>
