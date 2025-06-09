@@ -100,7 +100,7 @@ header {
 
 .box-content h3 {
     color: var(--bg);
-    font-size: 7rem;
+    font-size: 5rem;
 }
 
 .box-content .cxInput {
@@ -119,4 +119,47 @@ header {
     padding: 1.5rem;
     background-color: var(--btn);
     border-radius: 20%;
+}
+
+/* 2ª sessao */
+
+#home_2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 0.5rem;
+
+}
+
+h2 {
+    font-size: 5rem;
+    padding: 1rem 0;
+    margin-top: 20px;
+    color: var(--font1);
+}
+
+.image a img{
+    height: 15rem;
+    
+}
+
+.card {
+    padding: 5rem;
+    text-align: center;
+}
+
+.card .image p {
+    margin-top: 1rem;
+    padding: 1rem 0;
+    font-size: 3rem;
+    color: var(--font1);
+}
+
+.seta{
+    
+    margin-top: 9rem;
+    text-align: center;
+}
+
+.seta img {
+    height: 10rem;
 }
