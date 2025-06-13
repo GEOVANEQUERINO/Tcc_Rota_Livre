@@ -3,311 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/21b9934e7f.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Rota Livre</title>
   </head>
   <body>
-    <!-- HEADER -->
+    <!-- HEADER - MENU -->
     <header>
-      <div>
-        <a href="" class="logo">
-          <img src="img/logo.png" alt="imagem do logo" />
-        </a>
+      <div class="logo">
+        <img src="img/logo.png" alt="Logomarca Rota Livre" />
       </div>
-
-      <div>
-        <nav>
-          <ul class="ul-header">
+      <nav>
+        <div class="list-menu">
+          <ul>
             <li>
-              <a href="">HOME</a>
+              <a href="#">HOME</a>
             </li>
             <li>
-              <a href="">SOBRE</a>
+              <a href="#">SOBRE NóS</a>
             </li>
             <li>
-              <a href="">MENU</a>
+              <a href="#">SERVIÇOS</a>
             </li>
             <li>
-              <a href="">EVENTOS</a>
-            </li>
-            <li>
-              <a href="">AVALIAÇÕES</a>
+              <a href="#">CONTATO</a>
             </li>
           </ul>
-          <div class="botao-whats">
-            <a href="#"
-              ><i class="fa-brands fa-whatsapp" style="color: #63e6be"></i
-            ></a>
-          </div>
-        </nav>
-      </div>
-      <div class="icons">
-        <i class="fa-solid fa-user"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-car"></i>
-        <i class="fa-solid fa-bars" id="menu-btn"></i>
-      </div>
+        </div>
+      </nav>
     </header>
-
     <main>
+      <!-- 1ª SESSÃO MAPAS  -->
       <section id="home">
-        <div class="content-home">
-          <h3>
-            Chegue mais rápido <br />
-            Chegue melhor.
-          </h3>
+        <div class="content">
+          <div class="box-content">
 
-          <input type="text" placeholder="Origem" />
-          <input type="text" placeholder="Destino" />
+            <div id="typed"></div>
 
-          <a href="#" class="btn">Planejar Rota</a>
+            <input
+              type="text"
+              id="origem"
+              class="cxInput"
+              placeholder="Origem"
+            />
+            <input
+              type="text"
+              id="destino"
+              class="cxInput"
+              placeholder="Destino"
+            />
+            <a href="#" class="btn">PLANEJAR ROTA</a>
+          </div>
         </div>
-
-        <div class="content-home">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14638.068565505864!2d-46.295335599999994!3d-23.477875649999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1749612703302!5m2!1spt-BR!2sbr" width="700" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="content">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14638.068565505864!2d-46.295335599999994!3d-23.477875649999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1749169349954!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="450"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
-
-      <section id="about" class="about">
-        <h1 class="heading">Sobre <span>Nós</span></h1>
-
-        <!-- div adicionada -->
-        <div class="row">
+      <!-- 2ª sessão -->
+       <h2>Como Funciona</h2>
+       <section id="home_2">        
+        <div class="card">
           <div class="image">
-            <img src="img/sobre.jpg" alt="Imagem pizzaria" />
-          </div>
-          <div class="content">
-            <h3>Oque torna a Pizzariahash única</h3>
-
-            <p>
-              Descubra o sabor autêntico das nossas pizzas artesanais,
-              preparadas com ingredientes frescos e de alta qualidade.
-            </p>
-
-            <p>
-              Descubra o sabor autêntico das nossas pizzas artesanais,
-              preparadas com ingredientes frescos e de alta qualidade.
-            </p>
-
-            <a href="#" class="btn">Saiba Mais</a>
+            <a href="#"><img src="img/placa-de-sinalizacao.png" alt="imagem placa de sinalização"></a>
+            <p>Planeje sua Rota</p>
           </div>
         </div>
-      </section>
-
-      <section class="menu" id="menu">
-        <h2 class="heading">Nosso <span>Menu</span></h2>
-
-        <div class="container">
-          <div class="box">
-            <img src="img/pizza_item_1.jpg" alt="imagem1" />
-            <h3>Explosao de Pepperoni</h3>
-            <div class="price">55.99$ <span>60.98$</span></div>
-            <a href="#" class="btn">Adicionar ao carrinho</a>
-          </div>
-
-          <div class="box">
-            <img src="img/pizza_item_2.jpg" alt="imagem2" />
-            <h3>Aventura Vegetais</h3>
-            <div class="price">55.99$ <span>60.98$</span></div>
-            <a href="#" class="btn">Adicionar ao carrinho</a>
-          </div>
-
-          <div class="box">
-            <img src="img/pizza_item_3.jpg" alt="imagem3" />
-            <h3>Emediterrânea Delícia</h3>
-            <div class="price">55.99$ <span>60.98$</span></div>
-            <a href="#" class="btn">Adicionar ao carrinho</a>
-          </div>
-
-          <div class="box">
-            <img src="img/pizza_item_4.jpg" alt="imagem4" />
-            <h3>Pomodoro do Campo</h3>
-            <div class="price">55.99$ <span>60.98$</span></div>
-            <a href="#" class="btn">Adicionar ao carrinho</a>
-          </div>
-
-          <div class="box">
-            <img src="img/pizza_item_5.jpg" alt="imagem5" />
-            <h3>Luzitana Colorida</h3>
-            <div class="price">55.99$ <span>60.98$</span></div>
-            <a href="#" class="btn">Adicionar ao carrinho</a>
-          </div>
-
-          <div class="box">
-            <img src="img/pizza_item_6.jpg" alt="imagem6" />
-            <h3>Saborosa Lava</h3>
-            <div class="price">85.99$ <span>99.99$</span></div>
-            <a href="#" class="btn">Adicionar ao carrinho</a>
+        <div class="seta"><img src="img/angulo-da-seta-direita.png" alt="imagem seta para direita"></div>
+        <div class="card">
+          <div class="image">
+            <a href="#"><img src="img/transporte.png" alt="imagem trem"></a>
+            <p>Escolha seu Transporte</p>
           </div>
         </div>
-      </section>
-      <section id="products" class="products">
-        <h2 class="heading">Combos e <span>Promoções</span></h2>
-        <div class="box-container">
-          <!-- caixa 1 -->
-          <div class="box">
-            <div class="icons">
-              <a href="#menu">
-                <i class="fa-solid fa-car"></i>
-              </a>
-              <a href="#menu">
-                <i class="fa-solid fa-heart"></i>
-              </a>
-              <a href="#menu">
-                <i class="fa-solid fa-eye"></i>
-              </a>
-            </div>
-            <div class="image">
-              <img src="img/promo_1.jpg" alt="Pizza com coca cola" />
-            </div>
-            <div class="content">
-              <h3>Pizza+Refrigerante 2L</h3>
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <div class="price">60.00$ <span>a partir</span></div>
-            </div>
-          </div>
-          <!-- caixa 02 -->
-          <div class="box">
-            <div class="icons">
-              <a href="#menu">
-                <i class="fa-solid fa-car"></i>
-              </a>
-              <a href="#menu">
-                <i class="fa-solid fa-heart"></i>
-              </a>
-              <a href="#menu">
-                <i class="fa-solid fa-eye"></i>
-              </a>
-            </div>
-            <div class="image">
-              <img src="img/promo_2.jpg" alt="Pizza com lata pepsi cola" />
-            </div>
-            <div class="content">
-              <h3>Pizza+Refrigerante 350ml</h3>
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
-              <div class="price">50.00$ <span>a partir</span></div>
-            </div>
-          </div>
-          <!-- caixa 03 -->
-          <div class="box">
-            <div class="icons">
-              <a href="#menu">
-                <i class="fa-solid fa-car"></i>
-              </a>
-              <a href="#menu">
-                <i class="fa-solid fa-heart"></i>
-              </a>
-              <a href="#menu">
-                <i class="fa-solid fa-eye"></i>
-              </a>
-            </div>
-            <div class="image">
-              <img src="img/promo_3.jpg" alt="Pizza com coca cola" />
-            </div>
-            <div class="content">
-              <h3>Pizza+Refrigerante 600ml</h3>
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <div class="price">55.00$ <span>a partir</span></div>
-            </div>
+          <div class="seta"><img src="img/angulo-da-seta-direita.png" alt="imagem seta para direita"></div>
+        <div class="card">
+          <div class="image">
+            <a href="#"><img src="img/forma-de-pagamento.png" alt="imagem de forma de pagamento online"></a>
+            <p>Pagamento online</p>
           </div>
         </div>
-      </section>
-      <section id="review" class="review">
-        <h2 class="heading">O que nossos <span>Clentes Dizem</span></h2>
-
-        <div class="box-container">
-          <div class="box">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
-              aperiam, voluptate accusamus officia iusto autem quaerat tempora!
-              A, libero maxime! Necessitatibus assumenda obcaecati, iusto
-              provident doloribus earum libero quisquam? Debitis!
-            </p>
-
-            <img src="img/cliente_1.jpg" alt="cliente_1" class="user" />
-
-            <h3>Padre Rosalvino</h3>
-
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-
-          <div class="box">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
-              aperiam, voluptate accusamus officia iusto autem quaerat tempora!
-              A, libero maxime! Necessitatibus assumenda obcaecati, iusto
-              provident doloribus earum libero quisquam? Debitis!
-            </p>
-
-            <img src="img/cliente_2.jpg" alt="cliente_2" class="user" />
-
-            <h3>Igor Araujo</h3>
-
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-
-          <div class="box">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
-              aperiam, voluptate accusamus officia iusto autem quaerat tempora!
-              A, libero maxime! Necessitatibus assumenda obcaecati, iusto
-              provident doloribus earum libero quisquam? Debitis!
-            </p>
-
-            <img src="img/cliente_3.jpg" alt="cliente_3" class="user" />
-
-            <h3>Marcos Paulo</h3>
-
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
+          <div class="seta"><img src="img/angulo-da-seta-direita.png" alt="imagem seta para direita"></div>
+        <div class="card">
+          <div class="image">
+            <a href="#"><img src="img/mobilidade_opcao_2.png" alt="imagem patinete"></a>
+            <p>Mova-se com facilidade</p>
           </div>
         </div>
-      </section>
+
+       </section>
     </main>
-
     <footer>
       <div class="container">
         <div class="content-1">
-          <h4 class="title-footer">PIZZA <span>HASH</span></h4>
+          <h4 class="title-footer">ROTA <span>LIVRE</span></h4>
 
           <ul>
             <li>
@@ -351,9 +151,10 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 PIZZAHASH. Todos Direitos Reservado</p>
+        <p>&copy; 2025. ROTA LIVRE Todos Direitos Reservado</p>
       </div>
     </footer>
+    <script src="script.js"></script>
     <!-- CÓDIGO PARA INCORPORAR A FUNÇÃO LIBRAS NA PAGINA -->
     <div vw class="enabled">
       <div vw-access-button class="active"></div>

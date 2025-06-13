@@ -34,10 +34,12 @@ html {
 
 body {
     background: var(--bg);
+    width: 100%;
+    height: 100%;
 }
 
 header {
-    background: var(--bg);
+    background: var(--main-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,440 +51,122 @@ header {
     z-index: 999;
 }
 
-.hamburguer{
-    display: none;
-}
-
 .logo img{
-    height: 6.5rem;/*define altura do logo*/
-    border-radius: 100%; /*Torna a logo circular*/
+    height: 10rem;/*define altura do logo*/
+
 }
 
-.ul-header {
+.list-menu ul {
     display: flex;
-    gap: 15px;
+    gap: 3rem;
 }
 
-.ul-header li a {
+.list-menu li a {
     color: var(--font1);
-    font-size: 1.6rem;
+    font-size: 2.6rem;
 }
 
-.ul-header li a:hover {
+.list-menu li a:hover {
     color: var(--hover); /*muda a cor do hover*/
     border-bottom: 0.1rem solid var(--hover);/*Adiciona uma linha inferior no hover*/
     padding-bottom: 0.5rem;/*adicionja espaçamento inferior no hover*/
 }
 
-.icons {/*não estou mexendo nos icones e sim na caixa (div) */
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.icons i {/*estilização dos icones*/
-    color: var(--font1); /*Altera a cor dos icones*/
-    cursor: pointer; /*Altera o cursor ao passar sobre o icone*/
-    font-size: 2.5rem;
-    
-}
-
-.icons i:hover {
-    color: var(--hover);/*muda a cor do icone ao passar o mouse*/
-}
-
-.botao-whats {
-
-    position:fixed;
-    bottom: 20px;
-    right: 20px; 
-    font-size: 4rem;
-    z-index: 1000;
-}
-
-/*ESTILIZANDO A SEÇÃO*/
-
 #home {
-    display: grid;/*Organiza os elementos internos em um layout de grade
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); /*Cria colunas flexiveis com largura minima de 30rem e a maxima proporcional*/
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    gap: 1.5rem;/*Define o espaçamento entre os itens da grade*/
-    /*position: relative;/*permite posicionamento relativo
-    min-height: 85vh;/*altura minima da sessao
-    background: url(img/home.jpg) no-repeat;/*Adiciona a umagem sem repetição
-    background-size: cover; /*Define o preenchimento da imagem
-    background-position: center;/*Pocisionamento da imagem
-    border-bottom: var(--border);/*Adiciona borda inferior*/
-}
-
-.content-home {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    max-width: 60rem;/*define latgura maxima*/
-    position: relative;/*Permite manipular a posição*/
-    z-index: 2; /*garante que o conteudo fique acima da sobreposição */
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2%;
 
 }
-
-.content-home h3 {
-    font-size: 6rem; /*tamanho do titulo */
-    text-transform: capitalize; /*Deixa o texto em caixa alta */
-    color:#fff;/*cor branca */
-}
-
 
 .content {
-    max-width: 60rem;/*define latgura maxima*/
-    position: relative;/*Permite manipular a posição*/
-    z-index: 2; /*garante que o conteudo fique acima da sobreposição */
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
 
+    background: var(--bg-card);
 }
 
-.content h3 {
-    font-size: 6rem; /*tamanho do titulo */
-    text-transform: capitalize; /*Deiza o texto em caixa alta */
-    color:#fff;/*cor branca */
+.box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    row-gap: 1rem;
 }
 
-.content p {
-    font-size:2rem;/* tamanho da fonte para paragrafos */
-    font-weight:lighter;/* peso da fonte mais leve */
-    line-height: 1.8; /* Espaçamento entre linhas */
-    padding: 1rem 0; /* Espaçamento interno */
-    color: #fff; /*cor da letra */
+.box-content h3 {
+    color: var(--bg);
+    font-size: 5rem;
 }
 
-#home::before {
-    content: " ";/* adiciona pseudo=elemento vazio */
-    position: absolute; /* define posicionamento absoluto */
-    top: 0; /* alinha o pseudo elemento ao topo */
-    left: 0; /* alinha à esquerda */
-    width: 100%; /* ocupa toda a largura */
-    height: 100%; /* ocupa toda altura */
-    background: rgba(0,0,0, 0.5); /* adiciona sobreposição escura */
-    z-index: 1;
-}
-
-section {
-    padding: 2rem 7%; /* garante espaçamento interno nas sessões (responsividade) */
-
-}
-
-.heading{
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;/* texto em caixa alta*/
-    padding-bottom: 3rem;/* espaçamento inferior em relação ao titulo */
-    font-size: 4rem; /* 40% */
-}
-
-.heading span {
-    color: var(--main-color);
-    text-transform: uppercase; /*deixa o texto em caixa alta*/
+.box-content .cxInput {
+    width: 100vh;
+    height: 3rem;
+    background-color: var(--bg);
+    
+    
 }
 
 .btn {
-    margin-top: 1rem;
-    padding: 0.9rem 3rem; /*preenchimento interno superior e inferior */
-    font-size: 1.7rem;
-    color: #fff;
-    background-color: var(--main-color);
-    cursor: pointer;
-    display: inline-block; /* deixando a formatação do botão em formato de bloco*/
-    /* https://www.w3schools.com/css/css_display_visibility.asp */
+    padding: 1.5rem;
+    font-size: 2rem;
+    background: var(--btn);
+    color: var(--bg);
+    opacity: 0.5;
 }
 
 .btn:hover {
-    letter-spacing: 0.2rem; /*espaçamento entre as letras ao passar o mouse */
-}
-
-.row {
-    display: flex;/*define layout flexivel para os itens*/
-    align-items: center; /*alinha os itens ao centro verticalmente*/
-    background: var(--bg-card);/*Aplica uma cor de fundo aos elementos*/
-    flex-wrap: wrap;/* permite que os itens quebrem para a proxima linha se necessario*/
-    border: var(--border); /*aplica uma borda ao redor da linha*/
-}
-
-.row .image {
-    flex: 1 1 45rem; /* DEFINE O TAMANHO FLEXIVEL DO ELEMENTO: BASE 45REM, PODENDO CRESCER OU ENCOLHER, OU SEJA, FAZ COM QUE POSSA SER ADAPTAVEL PARA TELAS GRANDES OU PEQUENAS*/
-}
-
-.row .image img{
-    width: 100%; /*faz que a imagem ocupe toda a largura do container */
-}
-
-.row .content{
-    flex: 1 1 45rem;/*define o tamanho flexivel do conteudo: base 45rem podera crescer ou dimunuir*/
-    padding: 2rem; /*adiciona espaçamento interno ao redor do conteudo*/
-}
-
-.row .content h3{
-    font-size: 3rem;/*define o tamanho da fonte para subtitulo*/
-    color: #fff; /*cor da letra*/
-}
-
-.row .content p {
-    font-size: 1.6rem; /*define o tamanho da fonte para o paragrafo*/
-    color: #ccc;/*define uma cor cinza claro*/
-    padding: 1rem 0; /*adiciona espaçamento interno vertical ao texto e as laterais zeradas*/
-    line-height: 1.8rem; /*define espaçamento entre linhas*/
-}
-
-.container {
-    display: grid;/*Organiza os elementos internos em um layout de grade*/
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); /*Cria colunas flexiveis com largura minima de 30rem e a maxima proporcional*/
-    gap: 1.5rem;/*Define o espaçamento entre os itens da grade*/
-}
-
-.container .box{
-    padding: 5rem; /*Adiciona espaçamento interno ao redor do conteudoda caixa*/
-    text-align: center; /*Centraliza o texto horizontalmente*/
-    border: var(--border);/*aplicando uma borda ao redor da caixa*/
-    background: var(--bg-card);/*Define a cor da fundo da caixa*/
-}
-
-.container .box img{
-    height: 18rem; /*Define altura da imagem*/
-    border-radius: 100%; /*torna a imagem circular*/
-}
-
-.container .box h2 {
-    color: #fff; /*Aplica a cor branca ao titulo*/
-    font-size: 2rem; /*Define o tamanho da fonte do titulo*/
-    padding: 1rem 0; /*adiciona espaçamentovertical ao titulo*/
-
-}
-
-.container .box  .price{
-    color: #fff; /*Define a cor branca para o preço*/
-    font-size: 2.5rem; /*Define o tamanho da fonte do preço*/
-    padding: 0.5rem 0; /*adiciona espaçamento vertical ao preço*/
-}
-
-.container .box .price span {
-    font-size: 1.5rem; /*Define o tamanho da fonte para o preço original*/
-    text-decoration: line-through; /*aplica uma linha para indicar o preço riscado*/
-    font-weight: lighter; /*Aplica um peso de fonte mais fino*/
-}
-
-.container .box:hover {
-    background: #fff;
-    color: black;
-}
-
-.container .box:hover>*{
-    color: black; /*altera a cor dos elementos filhos para preto ao passar o mouse*/
-}
-
-/* Promoções */
-
-.products .box-container {
-    display: grid; /* organiza os elementos em uma grade*/
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); /*cria colunas flerxiveis com largura minima de 30rem e maxima proporcional*/
-    gap: 1.5rem; /* define o espaçamento entre os itens da grade*/
-}
-
-/* Estilizando os box (as caixas) */
-
-.box-container .box {
-    text-align: center;/* centraliza os textos */
-    border: var(--border); /*aplica uma borda ao redor da caixa */
-    padding: 2rem; /* adiciona espaçamento interno nas caixas */
-}
-
-/* Estilizando os icons */
-
-.icons a i {
-    height: 3rem; /*define a altura dos icones */
-    width: 3rem; /* largura dos icones*/
-    line-height: 3rem; /* distancia dos conteudos/alyura da linha*/
-    font-size: 1.7rem; /*define o tamanho da fonte para os icones*/
-    border: var(--border); /*aplica uma borda ao redor dos icones*/
-    color: #fff; /*define a cor branca para os icones*/
-    margin: 0.3rem; /*adiciona espaçamento entre os icones*/
-}
-
-.icons a i:hover {
-    background: var(--main-color);/*altera o fundo dos icones para a cor principal*/
-}
-
-.box .image img {
-    height: 25rem; /*altura das imagens*/
-}
-
-/* Estilizando a caixa content */
-
-.box  ,content {
-    color: #fff; /*define a cor branca para o conteudo textual*/
-    font-size: 2.5rem;/*define o tamanho da fonte para o conteudo*/
-}
-
-.box .content .stars {
-    padding: 1.5rem;/* adiciona espaçamento ao redor das estrelas */
-}
-
-.box .content .stars i {
-    font-size: 1.9rem; /* tamanho das estrelas */
-    color: var(--main-color); /*aplica a cor pricipal as estrelas*/
-}
-
-.box .content .price {
-    color: #fff;
-    font-size: 2.5rem;
-}
-
-.box .content .price span {
-    font-weight: lighter;/*aplica a fonte mais fina para o texto*/
-    font-size: 1.5rem;/* define o tamanho da fonte*/
-    text-transform: lowercase;/*transforma o texto adicional para letras minusculas*/
-}
-
-.content h3 {
-    font-size: 3rem;
-}
-
-/*formatação das caixas elemento pai*/
-
-.review .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
-    gap: 1.5rem;
-}
-
-.review .box-container .box{
-    border: var(--border);
-    text-align: center;
-    padding: 3rem 2rem;
-}
-
-.review .box-container .box p{
-    font-size: 1.7rem;
-    line-height: 1.8;
-    color: #ccc;
-    padding: 2rem 0;
-}
-
-.review .box-container .box h3 {
-    padding: 1rem 0;
-    color: #fff;
-    font-size: 2.2rem;
-}
-
-.user {
-    height: 10rem;
-    width: 10rem;
-    border-radius: 50%;
-    object-fit: cover; /*ajusta a imagem para preencher o espaço disponivel sem distorção*/
-}
-
-.review .box-container .box
-.stars i {
-    font-size: 1.7rem;
-    color: var(--main-color);
-}
-
-/*FOOTER*/
-
-.title-footer{
-    text-align: center;
-    text-transform: uppercase;
+    padding: 1.5rem;
     font-size: 2rem;
-    color: #fff;
-    margin-bottom: 1.5rem;
+    background: var(--btn);
+    color: var(--bg);
+    opacity: 1;
 }
 
-.title-footer span {
-    color: var(--main-color);
-    text-transform: uppercase;
+/* 2ª sessao */
+
+#home_2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 0.5rem;
+
 }
 
-footer {
-    background: var(--bg);
-    text-align: center;
-    padding: 4rem 0;
+h2 {
+    font-size: 5rem;
+    padding: 1rem 0;
+    margin-top: 20px;
+    color: var(--font1);
 }
 
-footer .container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 7%; /*adiciona espaçamento interno horizontalusando porcentagem*/
-}
-
-.content-1 {
-    flex: 1 1 25rem; /*define tamanho flexivel com largura minima de 25rem*/
-    margin: 1rem/*adiciona margem ao redor do conteudo*/;
-} 
-
-.content-1 ul {
-    list-style: none;
-    padding: 0;
-}
-
-.content-1 ul li {
-    margin-bottom: 1rem;/*adiciona espaçamento inferior entre os itens da lista*/
-}
-
-.content-1 ul li a{
-    color: #ccc;
-    text-decoration: none;
-    font-size: 1.6rem;
-}
-
-.content-1 ul li a:hover {
-    color: var(--main-color);
-    transition: 0.8s;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.social-links a i {
-    color: #ccc;
-    font-size: 3rem;
-}
-
-.social-links a i:hover {
-    color: var(--main-color);
-    transition: 0.8s;
-}
-
-.footer-bottom{
-    text-align: center; /*centraliza o texto */
-    padding: 1rem 0;/*Adiciona espaçamento interno vertical*/
-    font-size: 1.6rem;/*Define o tamanho da fonte*/
-    border-top: var(--border);/*Adiciona uma borda superior*/
-    margin-top: 2rem; /*Adiciona espaço acima do roda pé*/
-    color: #ccc;/*define a cor do texto como cinza*/
-}
-
-@media (max-width: 991px){
-
-    html{
-        font-size: 55%;
-    }
-
-    header {
-        padding: 1.5rem 2 rem;
-    }
-
-    section{
-        padding: 2rem;
-    }
+.image a img{
+    height: 15rem;
     
 }
 
-@media (max-width: 768px){
+.card {
+    padding: 5rem;
+    text-align: center;
+}
 
-    .ul-header {
-        display: none;
-    }
+.card .image p {
+    margin-top: 1rem;
+    padding: 1rem 0;
+    font-size: 3rem;
+    color: var(--font1);
+}
 
+.seta{
+    
+    margin-top: 9rem;
+    text-align: center;
+}
+
+.seta img {
+    height: 10rem;
 }
