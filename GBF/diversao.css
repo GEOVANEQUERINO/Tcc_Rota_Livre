@@ -1,0 +1,74 @@
+/* Importa a fonte "ROBOTO" do google fonts em diversos estilos */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Define variaveis globais para cores e bordas, facilitando a manutenção e ajustes futuros*/
+:root {
+    --main-color: #d9d9d9;
+    --bg: #ffffffdc;
+    --bg-card:#00324A;
+    --border: 0.1rem solid gray;
+    --font1: #41494c;
+    --hover:#288e96;
+    --btn:#36878e;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/**/
+    font-family: 'Roboto', 'sans-serif';
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;/**/
+    transition: 0.2s linear; /**/
+    outline: none;/**/
+    border: none;/**/
+    scroll-behavior: smooth;/*habilita a rolagem de tel mais suave*/
+}
+
+html {
+    font-size: 62.5%; /*Configuração do font-size para 62.5% facilitando o uso do REM (1rem = 10px)*/
+    overflow-x: hidden;/**/
+}
+
+body {
+    background: var(--bg);
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%; /*Uso da porcentagem*/
+    border-bottom: var(--border);
+    position: sticky; /*deixa o header suspenso*/
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+
+.logo img{
+    height: 10rem;/*define altura do logo*/
+
+}
+
+.list-menu ul {
+    display: flex;
+    gap: 3rem;
+}
+
+.list-menu li a {
+    color: var(--font1);
+    font-size: 2.6rem;
+}
+
+.list-menu li a:hover {
+    color: var(--hover); /*muda a cor do hover*/
+    border-bottom: 0.1rem solid var(--hover);/*Adiciona uma linha inferior no hover*/
+    padding-bottom: 0.5rem;/*adicionja espaçamento inferior no hover*/
+}
