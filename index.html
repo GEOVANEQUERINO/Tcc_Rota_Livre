@@ -19,8 +19,8 @@
       <img src="img/logo.png" alt="Logomarca Rota Livre" />
     </div>
     <div class="menu-toggle" id="menu-toggle">
-  <i class="fas fa-bars"></i>
-</div>
+      <i class="fas fa-bars"></i>
+    </div>
     <nav id="menu">
       <div class="list-menu">
         <ul>
@@ -57,10 +57,7 @@
         </div>
       </div>
       <div class="content">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14638.068565505864!2d-46.295335599999994!3d-23.477875649999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1749169349954!5m2!1spt-BR!2sbr"
-          width="100%" height="450" height="100%" style="border: 0" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="map" style="width: 100%; height: 400px;"></div>
       </div>
     </section>
 
@@ -115,17 +112,19 @@
     </section>
 
     <!-- 3ª SESSÃO CARROSSEL -->
-<section class="depoimentos">
-  <h3>Depoimentos de Usuários</h3>
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide caixa-01"></div>
-      <div class="swiper-slide caixa-02"></div>
-      <div class="swiper-slide caixa-03"></div>
-      <div class="swiper-slide caixa-04"></div>
-    </div>
-  </div>
-</section>
+    
+      <section class="depoimentos">
+        <h3>Depoimentos de Usuários</h3>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide caixa-01"></div>
+            <div class="swiper-slide caixa-02"></div>
+            <div class="swiper-slide caixa-03"></div>
+            <div class="swiper-slide caixa-04"></div>
+          </div>
+        </div>
+      </section>      
+
   </main>
 
   <!-- 4ª SESSÃO RODAPE  -->
@@ -194,11 +193,9 @@
   <script>
     new window.VLibras.Widget("https://vlibras.gov.br/app");
   </script>
-  <script 
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoilxBUsC78sRAsCAvpwTO39TJlKZyDwk&callback=initMap"
-  async
-  defer>
-</script>
+  <!-- chave da API GOOGLE MAPS -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0pucHyheX2Iy_gVLzXWRb-AwfG1T_OxU&callback=initMap"
+    async defer></script>
 </body>
 
 </html>

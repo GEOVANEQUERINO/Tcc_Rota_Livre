@@ -34,43 +34,61 @@ toggle.addEventListener('click', () => {
 
 // CALCULO DE ROTA
 
+    let map;
+let directionsService;
+let directionsRenderer;
+
 function initMap() {
-  const mapa = new google.maps.Map(document.getElementById("mapa-rota"), {
-    zoom: 7,
-    center: { lat: -23.5505, lng: -46.6333 }
+  // Cria o mapa centralizado em São Paulo
+  map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 14,
+    center: { lat: -23.5505, lng: -46.6333 }, // São Paulo como exemplo
   });
 
-  const directionsService = new google.maps.DirectionsService();
-  const directionsRenderer = new google.maps.DirectionsRenderer();
-  directionsRenderer.setMap(mapa);
+  directionsService = new google.maps.DirectionsService();
+  directionsRenderer = new google.maps.DirectionsRenderer();
+  directionsRenderer.setMap(map);
 
-  document.getElementById("btn-rota").addEventListener("click", function (e) {
-    e.preventDefault();
+  // Aguarda DOM carregar
+  window.addEventListener("load", () => {
+    const origemInput = document.getElementById("origem");
+    const destinoInput = document.getElementById("destino");
+    const botao = document.querySelector(".btn");
 
-    const origem = document.getElementById("origem").value;
-    const destino = document.getElementById("destino").value;
-
-    if (!origem || !destino) {
-      alert("Por favor, preencha ambos os campos.");
+    if (!origemInput || !destinoInput || !botao) {
+      console.error("Inputs ou botão não encontrados.");
       return;
     }
 
-    directionsService.route(
-      {
-        origin: origem,
-        destination: destino,
-        travelMode: google.maps.TravelMode.DRIVING
-      },
-      function (response, status) {
-        if (status === google.maps.DirectionsStatus.OK) {
-          directionsRenderer.setDirections(response);
-        } else {
-          alert("Erro ao calcular rota: " + status);
-        }
+    botao.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const origem = origemInput.value;
+      const destino = destinoInput.value;
+
+      if (!origem || !destino) {
+        alert("Por favor, preencha os dois campos.");
+        return;
       }
-    );
+
+      calcularERenderizarRota(origem, destino);
+    });
   });
 }
 
+function calcularERenderizarRota(origem, destino) {
+  const request = {
+    origin: origem,
+    destination: destino,
+    travelMode: google.maps.TravelMode.DRIVING, // pode trocar por 'caminhada', 'bicicleta', etc
+  };
 
-
+  directionsService.route(request, (result, status) => {
+    if (status === google.maps.DirectionsStatus.OK) {
+      directionsRenderer.setDirections(result);
+    } else {
+      alert("Não foi possível calcular a rota: " + status);
+      console.error(status);
+    }
+  });
+}
