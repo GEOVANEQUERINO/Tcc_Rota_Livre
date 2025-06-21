@@ -51,6 +51,13 @@ header {
     z-index: 999;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 3rem;
+  color: var(--font1);
+  cursor: pointer;
+}
+
 .logo img{
     height: 10rem;/*define altura do logo*/
 
@@ -109,7 +116,21 @@ header {
     height: 3rem;
     background-color: var(--bg);
     
-    
+}
+
+#typed {
+    width: 100%;
+    margin-top: 10rem;
+    font-size: 3rem;
+    color: var(--main-color);
+    border-right: 2px solid #00ff99;
+    white-space: nowrap;/**/
+    overflow: hidden;/**/
+}
+
+.typing {
+    width: 30rem;
+    height: 10rem;
 }
 
 .btn {
@@ -150,23 +171,198 @@ h2 {
 }
 
 .card {
+    display: flex;
+    gap: 10rem;
     padding: 5rem;
     text-align: center;
 }
 
 .card .image p {
     margin-top: 1rem;
-    padding: 1rem 0;
+    padding: 5rem 0;
     font-size: 3rem;
     color: var(--font1);
 }
 
 .seta{
-    
+
     margin-top: 9rem;
     text-align: center;
 }
 
 .seta img {
     height: 10rem;
+}
+
+/* ESTILIZANDO AS CAIXAS DIV QUE GUARDAM AS IMAGENS*/
+
+.depoimentos h3 {
+  font-size: 3rem;
+  color: var(--bg-card);
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.swiper {
+  width: 20%;
+  max-width: 900px;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Se desejar garantir que as imagens não estourem em telas pequenas */
+@media (max-width: 768px) {
+  .swiper {
+    height: 200px;
+  }
+}
+
+.caixa-01 {
+  background-image: url('img/banner_01.png');
+}
+
+.caixa-02 {
+  background-image: url('img/banner_02.png');
+}
+
+.caixa-03 {
+  background-image: url('img/banner_03.png');
+}
+
+.caixa-04 {
+  background-image: url('img/banner_patinete.png');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONFIGURAÇÃO SESSAO RODAPÉ */
+
+.title-footer{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+.title-footer span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+footer {
+    background: var(--bg-card);
+    text-align: center;
+    padding: 4rem 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 7%; /*adiciona espaçamento interno horizontalusando porcentagem*/
+}
+
+.content-1 {
+    flex: 1 1 25rem; /*define tamanho flexivel com largura minima de 25rem*/
+    margin: 1rem/*adiciona margem ao redor do conteudo*/;
+} 
+
+.content-1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content-1 ul li {
+    margin-bottom: 1rem;/*adiciona espaçamento inferior entre os itens da lista*/
+}
+
+.content-1 ul li a{
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.content-1 ul li a:hover {
+    color: var(--secondary);
+    transition: 0.8s;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-links a i {
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.social-links a i:hover {
+    color: var(--secondary);
+    transition: 0.8s;
+}
+
+.footer-bottom{
+    text-align: center; /*centraliza o texto */
+    padding: 1rem 0;/*Adiciona espaçamento interno vertical*/
+    font-size: 1.6rem;/*Define o tamanho da fonte*/
+    border-top: var(--border);/*Adiciona uma borda superior*/
+    margin-top: 2rem; /*Adiciona espaço acima do roda pé*/
+    color: #ccc;/*define a cor do texto como cinza*/
+}
+
+/* responsividade */
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  .list-menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+  }
 }
