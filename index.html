@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
   <title>Rota Livre</title>
 </head>
 
@@ -24,17 +25,24 @@
     <nav id="menu">
       <div class="list-menu">
         <ul>
-          <li>
-            <a href="Victor/bike.html">Bicicletas</a>
+          <li class="submenu">
+            <a href="#">Modalidades <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="Victor/bike.html">Bicicletas</a></li>
+              <li><a href="EJR/patinete.html">Patinetes</a></li>
+              <li><a href="#">Skates</a></li>
+            </ul>
+          </li>
+          <li class="submenu">
+            <a href="#">Eventos <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="GBF/diversao.html">Passeios Coletivos</a></li>
+              <li><a href="#">Workshops</a></li>
+              <li><a href="#">Aulas Gratuitas</a></li>
+            </ul>
           </li>
           <li>
-            <a href="EJR/patinete.html">Patinetes</a>
-          </li>
-          <li>
-            <a href="GBF/diversao.html">Eventos</a>
-          </li>
-          <li>
-            <a href="#">Sobre nós</a>
+            <a href="sobre.html">Sobre nós</a>
           </li>
         </ul>
       </div>
@@ -85,24 +93,6 @@
         </div>
       </div>
 
-      <!-- 
-        <div class="card">
-          <div class="image">
-            <a href="#"
-              ><img
-                src="img/forma-de-pagamento.png"
-                alt="imagem de forma de pagamento online"
-            /></a>
-            <p>Pagamento online</p>
-          </div>
-          <div class="seta">
-          <img
-            src="img/angulo-da-seta-direita.png"
-            alt="imagem seta para direita"
-          />
-        </div>
-        </div>  -->
-
       <div class="card">
         <div class="image">
           <a href="#"><img src="img/mobilidade_opcao_2.png" alt="imagem patinete" /></a>
@@ -112,18 +102,18 @@
     </section>
 
     <!-- 3ª SESSÃO CARROSSEL -->
-    
-      <section class="depoimentos">
-        <h3>Depoimentos de Usuários</h3>
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide caixa-01"></div>
-            <div class="swiper-slide caixa-02"></div>
-            <div class="swiper-slide caixa-03"></div>
-            <div class="swiper-slide caixa-04"></div>
-          </div>
+
+    <section class="depoimentos">
+      <h3>Depoimentos de Usuários</h3>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide caixa-01"></div>
+          <div class="swiper-slide caixa-02"></div>
+          <div class="swiper-slide caixa-03"></div>
+          <div class="swiper-slide caixa-04"></div>
         </div>
-      </section>      
+      </div>
+    </section>
 
   </main>
 
@@ -193,7 +183,9 @@
   <script>
     new window.VLibras.Widget("https://vlibras.gov.br/app");
   </script>
+
   <!-- chave da API GOOGLE MAPS -->
+
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0pucHyheX2Iy_gVLzXWRb-AwfG1T_OxU&callback=initMap"
     async defer></script>
 </body>
