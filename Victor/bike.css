@@ -12,3 +12,115 @@
 }
 
 
+header {
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%; /*Uso da porcentagem*/
+    border-bottom: var(--border);
+    position: sticky; /*deixa o header suspenso*/
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 3rem;
+  color: var(--font1);
+  cursor: pointer;
+}
+
+.logo img{
+    height: 10rem;/*define altura do logo*/
+
+}
+
+.list-menu li {
+    display:inline-block;
+    gap: 3rem;
+}
+
+.list-menu li a {
+    color: var(--font1);
+    font-size: 2.6rem;
+    padding: 1.5rem;
+}
+
+.list-menu li:hover {
+    color: var(--hover); /*muda a cor do hover*/
+    border-bottom: 0.1rem solid var(--hover);/*Adiciona uma linha inferior no hover*/
+    padding-bottom: 0.5rem;/*adicionja espaçamento inferior no hover*/
+}
+
+.submenu {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--main-color);
+  display: none;
+  flex-direction: column;
+  min-width: 15rem;
+}
+
+.submenu:hover .dropdown {
+  display: flex;
+}
+
+.dropdown li a {
+  padding: 1rem;
+  color: var(--font1);
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+
+
+.mob-bike1{
+    height: 35rem; /*altura da sessão*/
+    position: relative; /*posição relativa em relação a viewport (tela)*/
+}
+
+/*estilização das caixas (div) que guardam as imagens*/
+
+.swiper-slide{ /*aqui estamos chamando uma das classes*/
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-apresentacao{
+    position: absolute; /*posiciona o elemento de forma absoluta dentro do container pai com position: relative*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);/*Centraliza o elemento exatamente no meio container (corrigi o deslocamento*/
+    text-align: center;
+    z-index: 10;
+    color: #fff;
+}
+
+.carousel-apresentacao h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+
+
+.slide-01 {
+    background-image: url();
+}
+
+.slide-02 {
+    background-image: url();
+}
+
+.slide-03{
+    background-image: url();
+}
+
+
+

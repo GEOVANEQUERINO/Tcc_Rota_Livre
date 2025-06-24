@@ -6,36 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="bike.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> /
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- linha 10 e 11 link do carrossel Acima  -->
+
 </head>
 
 
 <header>
-
-    <div class="logo-rota">
-        <img src="img/logo.png" alt="logo-rota livre">
-
+    <div class="logo">
+        <img src="img/logo.png" alt="Logomarca Rota Livre" />
     </div>
-
+    <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+    <nav id="menu">
+        <div class="list-menu">
+            <ul>
+                <li class="submenu">
+                    <a href="#">Modalidades <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        
+                        <li><a href="EJR/patinete.html">Patinetes</a></li>
+                        <li><a href="#">Skates</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#">Eventos <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="GBF/diversao.html">Passeios Coletivos</a></li>
+                        <li><a href="#">Workshops</a></li>
+                        <li><a href="#">Aulas Gratuitas</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sobre.html">Sobre nós</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>
 
 <body>
 
+    <!-- section 1, do carrosel -->
     <section class="mob-bike1">
+        <div class="carousel-apresentacao">
+            <h1>Transformando Cidades com Pedaladas</h1>
+        </div>
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-wrapper slide-01"></div>
+            <div class="swiper-wrapper slide-02"></div>
+            <div class="swiper-wrapper slide-03"></div>
+            <div class="swiper-wrapper slide-04"></div>
+
+        </div>
+
+
+
     </section>
 
     <section class="mob-bike-2">
 
         <div class="img-section01">
-            <img src="" alt="">
+            <img src="img/logo.png" alt="">
         </div>
 
         <div class="text-2">
-            <h3>via a energia das nossas pedaladas noturnas!</h3>
+            <h3>viva a energia das nossas pedaladas noturnas!</h3>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex quae tempora dolorum voluptatem modi.
                 Accusantium error porro amet officiis tempore reprehenderit placeat distinctio facilis dicta adipisci
                 doloribus rem, labore ex.</p>
-
         </div>
 
     </section>
