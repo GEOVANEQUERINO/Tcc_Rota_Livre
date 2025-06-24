@@ -5,31 +5,39 @@
 :root {
     --main-color: #d9d9d9;
     --bg: #ffffffdc;
-    --bg-card:#00324A;
+    --bg-card: #00324A;
     --border: 0.1rem solid gray;
     --font1: #41494c;
-    --hover:#288e96;
-    --btn:#36878e;
+    --hover: #288e96;
+    --btn: #36878e;
 }
 
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;/**/
+    box-sizing: border-box;
+    /**/
     font-family: 'Roboto', 'sans-serif';
     text-decoration: none;
     list-style: none;
-    text-transform: capitalize;/**/
-    transition: 0.2s linear; /**/
-    outline: none;/**/
-    border: none;/**/
-    scroll-behavior: smooth;/*habilita a rolagem de tel mais suave*/
+    text-transform: capitalize;
+    /**/
+    transition: 0.2s linear;
+    /**/
+    outline: none;
+    /**/
+    border: none;
+    /**/
+    scroll-behavior: smooth;
+    /*habilita a rolagem de tel mais suave*/
 }
 
 html {
-    font-size: 62.5%; /*Configuração do font-size para 62.5% facilitando o uso do REM (1rem = 10px)*/
-    overflow-x: hidden;/**/
+    font-size: 62.5%;
+    /*Configuração do font-size para 62.5% facilitando o uso do REM (1rem = 10px)*/
+    overflow-x: hidden;
+    /**/
 }
 
 body {
@@ -43,17 +51,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 7%; /*Uso da porcentagem*/
+    padding: 1.5rem 7%;
+    /*Uso da porcentagem*/
     border-bottom: var(--border);
-    position: sticky; /*deixa o header suspenso*/
+    position: sticky;
+    /*deixa o header suspenso*/
     top: 0;
     left: 0;
     z-index: 999;
 }
 
 
-.logo img{
-    height: 10rem;/*define altura do logo*/
+.logo img {
+    height: 10rem;
+    /*define altura do logo*/
 
 }
 
@@ -68,7 +79,57 @@ header {
 }
 
 .list-menu li a:hover {
-    color: var(--hover); /*muda a cor do hover*/
-    border-bottom: 0.1rem solid var(--hover);/*Adiciona uma linha inferior no hover*/
-    padding-bottom: 0.5rem;/*adicionja espaçamento inferior no hover*/
+    color: var(--hover);
+    /*muda a cor do hover*/
+    border-bottom: 0.1rem solid var(--hover);
+    /*Adiciona uma linha inferior no hover*/
+    padding-bottom: 0.5rem;
+    /*adicionja espaçamento inferior no hover*/
+}
+
+.diversao {
+    background-image: url(imagem/fdhdt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.diversao02 {
+    display: grid;
+    /* Organiza */
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg);
+}
+
+.img {
+    width: 55rem;
+    height: 44rem;
+}
+
+.diversao03 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+}
+
+.diversao03 h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    display: grid;
+    /* Organiza */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
 }
