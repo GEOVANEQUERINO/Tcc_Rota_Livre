@@ -81,7 +81,7 @@ header {
 
 
 
-.mob-bike1{
+.swiper{
     height: 35rem; /*altura da sessão*/
     position: relative; /*posição relativa em relação a viewport (tela)*/
 }
@@ -111,16 +111,38 @@ header {
 
 
 .slide-01 {
-    background-image: url();
+    background-image: url(img/1000080615.png);
 }
 
 .slide-02 {
-    background-image: url();
+    background-image: url(img/1000080616.png);
 }
 
 .slide-03{
-    background-image: url();
+    background-image: url(img/bike-2.jpg);
 }
+
+.slide-04{
+    background-image: url(img/1000080616.png);
+}
+
+
+.mob-bike-2{
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+
+.mob-bike-2 .img-section02{
+    flex: 1 1 45rem;
+    /*Define o tamanho flexível do elemento: 45rem, podendo crescerou encolher, ou seja,
+    faz com que possa ser adptavel para telas grandes e pequenas */
+}
+
+
 
 
 
