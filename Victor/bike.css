@@ -8,6 +8,7 @@
     --font1: #41494c;
     --hover:#288e96;
     --btn:#36878e;
+   
 
 }
 
@@ -93,7 +94,7 @@ header {
     background-position: center;
 }
 
-.carousel-apresentacao{
+.carousel-text{
     position: absolute; /*posiciona o elemento de forma absoluta dentro do container pai com position: relative*/
     top: 50%;
     left: 50%;
@@ -103,44 +104,76 @@ header {
     color: #fff;
 }
 
-.carousel-apresentacao h1{
+.carousel-text h1{
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: #fff;
 }
 
-
-
-.slide-01 {
+.caixa-01 {
     background-image: url(img/1000080615.png);
 }
 
-.slide-02 {
-    background-image: url(img/1000080616.png);
-}
-
-.slide-03{
-    background-image: url(img/bike-2.jpg);
-}
-
-.slide-04{
+.caixa-02 {
     background-image: url(img/1000080616.png);
 }
 
 
-.mob-bike-2{
-    color: var(--main-color);
+
+.row{
     display: flex;
-    justify-content: center;
+    /*defini layout flexivel para os itens*/
     align-items: center;
-    gap: 1.5rem;
-    
+    /*alinhamento dos contúodos ao centro*/
+    background: var(--bg);
+    /*Aplica uma cor de fundo aos elementos*/
+    flex-wrap: wrap;
+    /*permite que os itens quebrem se necessário*/
+    border: var(--border);
+    /*Aplica uma borda ao redor da linha se necessário*/
 }
 
-.mob-bike-2 .img-section02{
+.row .img-section02{
     flex: 1 1 45rem;
     /*Define o tamanho flexível do elemento: 45rem, podendo crescerou encolher, ou seja,
     faz com que possa ser adptavel para telas grandes e pequenas */
 }
+
+.row .img-section02 img{
+    width: 100%;
+}
+
+.row .text-2{
+    flex: 1 1 45rem;
+    /*Defini o tamanho flexível do conteúdo: base 45rem, poderá crescer ou diminuir*/
+    padding: 2rem;
+    /*adiciona espaçamento interno ao redor do conteúdo  */
+}
+
+.row .text-2 h3{
+    font-size: 3rem;
+    color: var(--font1);
+}
+
+.row .text-2 p{
+    font-size: 1.6rem;
+    /*Defini o tamanho da fonte para o paragrafo*/
+    color: var(--font1);
+    padding: 1rem 0;
+    /*adiciona espaçamento interno vertical ao texto e as letras zeradas*/
+    line-height: 1.8rem;
+    /*defini o espaçamento entre linhas de um texto*/
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
