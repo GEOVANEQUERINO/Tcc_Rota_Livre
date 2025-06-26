@@ -13,6 +13,32 @@
 }
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /**/
+    font-family: 'Roboto', 'sans-serif';
+    text-decoration: none;
+    text-transform: capitalize;
+    /**/
+    transition: 0.2s linear;
+    /**/
+    outline: none;
+    /*faz com que o site não as sombras de borda ao redor do botão*/
+    border: none;
+    /*retirando todas as bordas*/
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    /*Configuração do Font-Size para 62.5%, facilitando o uso do REM (1rem = 10px)*/
+    overflow-x: hidden;
+    /**/
+}
+
+
 header {
     background: var(--main-color);
     display: flex;
@@ -83,7 +109,7 @@ header {
 
 
 .swiper{
-    height: 35rem; /*altura da sessão*/
+    height: 50rem; /*altura da sessão*/
     position: relative; /*posição relativa em relação a viewport (tela)*/
 }
 
@@ -131,6 +157,7 @@ header {
     /*permite que os itens quebrem se necessário*/
     border: var(--border);
     /*Aplica uma borda ao redor da linha se necessário*/
+    
 }
 
 .row .img-section02{
@@ -139,7 +166,7 @@ header {
     faz com que possa ser adptavel para telas grandes e pequenas */
 }
 
-.row .img-section02 img{
+.row .img-section02 img {
     width: 100%;
 }
 
