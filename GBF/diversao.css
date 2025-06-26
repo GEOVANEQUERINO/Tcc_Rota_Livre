@@ -61,6 +61,46 @@ header {
     z-index: 999;
 }
 
+/* Estilizando a SECTION*/
+.swiper {
+    height: 35rem;
+    position: relative;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.carroussel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    background-color: #11111160;
+}
+
+
+.caixa-01 {
+    background-image: url(imagem/default.jpg);
+}
+
+.caixa-02 {
+    background-image: url(imagem/default.jpg);
+}
+
+.caixa-03 {
+    background-image: url(imagem/beto-carrero.jpg);
+    
+}
+
+.carousel-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
 
 .logo img {
     height: 10rem;
@@ -88,14 +128,16 @@ header {
 }
 
 .diversao {
-    background-image: url(imagem/fdhdt.jpg);
+    background-image: url(imagem/carnival01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20%;
+    padding: 25rem;
     display: flex;
     justify-content: center;
-    
+}
 
+.star{
+    font-size: 3.5rem;
 }
 
 .diversao02 {
@@ -105,10 +147,13 @@ header {
     justify-content: center;
     align-items: center;
     background: var(--bg);
-    padding: 2em 0 ;
+    padding: 2em 2rem  ;
 }
 .box-01 h2, p {
     font-size: 2rem;
+}
+.box-01 h2 {
+    font-size: 6rem;
 }
 .img {
     width: 32rem;
@@ -137,19 +182,23 @@ header {
     /* Organiza */
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+
+}
+
+.box:hover{
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgb(0, 0, 0);
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .box-02{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
-.box-03{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 /* CONFIGURAÇÃO SESSAO RODAPÉ */
 
 .title-footer{
@@ -227,4 +276,18 @@ footer .container {
     border-top: var(--border);/*Adiciona uma borda superior*/
     margin-top: 2rem; /*Adiciona espaço acima do roda pé*/
     color: #ccc;/*define a cor do texto como cinza*/
+}
+
+@media(max-width: 768px) {
+    /* Ajustes gerais */
+    html{
+       font-size: 1rem; 
+    }
+    .diversao .star h1{
+         font-size: 2.3rem;
+    }
+    .{
+        flex-direction: column;
+        align-items: center;
+    }
 }

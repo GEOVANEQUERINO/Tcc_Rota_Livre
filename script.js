@@ -34,7 +34,7 @@ toggle.addEventListener('click', () => {
 
 // CALCULO DE ROTA
 
-    let map;
+let map;
 let directionsService;
 let directionsRenderer;
 
@@ -92,3 +92,19 @@ function calcularERenderizarRota(origem, destino) {
     }
   });
 }
+
+// SCROLL REVEAL
+
+window.revelar = ScrollReveal({reset:true});
+
+revelar.reveal('.card', {
+  duration: 2000,
+  distance: '90px',
+  origin: 'left'
+});
+
+revelar.reveal('.social-links', {
+  duration: 2000,
+  distance: '90px',
+  origin: 'right'
+});
