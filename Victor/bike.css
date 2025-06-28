@@ -4,7 +4,7 @@
     --main-color: #d9d9d9;
     --bg: #ffffffdc;
     --bg-card:#00324A;
-    --border: 0.1rem solid gray;
+    --border: 0.1rem solid rgb(56, 55, 55);
     --font1: #41494c;
     --hover:#288e96;
     --btn:#36878e;
@@ -13,7 +13,7 @@
 }
 
 
-* {
+* { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -34,8 +34,14 @@
 html {
     font-size: 62.5%;
     /*Configuração do Font-Size para 62.5%, facilitando o uso do REM (1rem = 10px)*/
-    overflow-x: hidden;
-    /**/
+    
+    
+}
+
+.content{
+    max-width: 60rem;
+    position: relative;
+    z-index: 5;
 }
 
 
@@ -144,19 +150,32 @@ header {
     background-image: url(img/1000080616.png);
 }
 
+/*fim da section-01*/
 
+/*section-02*/
+
+.heading{
+    text-align: center;
+    color: var(--bg-card);
+    font-size: 3.8rem;
+    padding: 1.5rem;
+
+}
+
+.mob-bike-2{
+    min-height: 85vh;
+}
 
 .row{
-    display: flex;
-    /*defini layout flexivel para os itens*/
-    align-items: center;
-    /*alinhamento dos contúodos ao centro*/
-    background: var(--bg);
-    /*Aplica uma cor de fundo aos elementos*/
-    flex-wrap: wrap;
-    /*permite que os itens quebrem se necessário*/
-    border: var(--border);
-    /*Aplica uma borda ao redor da linha se necessário*/
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   border: var(--border);
+   background: var(--bg);
+   background-position: relative;
+   min-height: 65vh;
+   padding: 1.0rem;
+   
     
 }
 
@@ -169,20 +188,21 @@ header {
 .row .img-section02 img {
     width: 100%;
 }
-
-.row .text-2{
+content
+.row .content{
     flex: 1 1 45rem;
     /*Defini o tamanho flexível do conteúdo: base 45rem, poderá crescer ou diminuir*/
-    padding: 2rem;
+    padding: 1.2rem;
     /*adiciona espaçamento interno ao redor do conteúdo  */
 }
 
-.row .text-2 h3{
+.row .content h3{
     font-size: 3rem;
     color: var(--font1);
+    padding: 1.2rem;
 }
 
-.row .text-2 p{
+.row .content p{
     font-size: 1.6rem;
     /*Defini o tamanho da fonte para o paragrafo*/
     color: var(--font1);
@@ -190,7 +210,11 @@ header {
     /*adiciona espaçamento interno vertical ao texto e as letras zeradas*/
     line-height: 1.8rem;
     /*defini o espaçamento entre linhas de um texto*/
+    justify-content: center;
+
 }
+
+
 
 
 
