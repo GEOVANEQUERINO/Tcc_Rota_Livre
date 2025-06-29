@@ -8,6 +8,7 @@
     --font1: #41494c;
     --hover:#288e96;
     --btn:#36878e;
+    --color2: #13131a;
    
 
 }
@@ -214,8 +215,121 @@ content
 
 }
 
+.bike-eventos h3 {
+    text-align: center;
+    color: var(--font1);
+    font-size: 2.8rem;
+    padding: 1rem;
+    
+}
+
+.bike-eventos h3 span{
+    color: red;
+}
+
+.bit-buttom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.9rem;
+    
+}
+
+.btn {
+    padding: 0.9rem 3rem;
+    background-color: var(--btn);
+    color: var(--bg);
+    font-size: 1.8rem;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 1.5rem;
 
 
+}
+
+.btn:hover{
+    letter-spacing: 0.2rem;
+    color: var(--color2);
+    transition: 0.8s;
+    font-weight: bolder;
+}
+
+.title-footer{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+.title-footer span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+footer {
+    background: var(--bg-card);
+    text-align: center;
+    padding: 4rem 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 7%; /*adiciona espaçamento interno horizontalusando porcentagem*/
+}
+
+.content-1 {
+    flex: 1 1 25rem; /*define tamanho flexivel com largura minima de 25rem*/
+    margin: 1rem/*adiciona margem ao redor do conteudo*/;
+} 
+
+.content-1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content-1 ul li {
+    margin-bottom: 1rem;/*adiciona espaçamento inferior entre os itens da lista*/
+}
+
+.content-1 ul li a{
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.content-1 ul li a:hover {
+    color: var(--hover);
+    transition: 0.8s;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-links a i {
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.social-links a i:hover {
+    color: var(--hover);
+    transition: 0.8s;
+}
+
+.footer-bottom{
+    text-align: center; /*centraliza o texto */
+    padding: 1rem 0;/*Adiciona espaçamento interno vertical*/
+    font-size: 1.6rem;/*Define o tamanho da fonte*/
+    border-top: var(--border);/*Adiciona uma borda superior*/
+    margin-top: 2rem; /*Adiciona espaço acima do roda pé*/
+    color: #ccc;/*define a cor do texto como cinza*/
+}
 
 
 
