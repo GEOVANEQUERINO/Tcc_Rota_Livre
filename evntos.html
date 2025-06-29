@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos - Rota Livre</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4fdfc;
+      color: #374451;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #59ad96;
+      padding: 1rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    main {
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2e7563;
+      margin-bottom: 2rem;
+    }
+
+    .event {
+      background-color: white;
+      border-left: 5px solid #59ad96;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .event h3 {
+      margin: 0 0 0.5rem;
+      color: #374451;
+    }
+
+    .event p {
+      margin: 0.3rem 0;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #59ad96;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (min-width: 700px) {
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Rota Livre</h2>
+    <p>Conectando pessoas com mobilidade inteligente</p>
+  </header>
+
+  <main>
+    <h1>Eventos de Mobilidade</h1>
+    <div id="lista-eventos">
+      <p>Carregando eventos...</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Rota Livre - Projeto Acadêmico
+  </footer>
+
+  <script>
+  const token = "Bearer HL7YNPMJSCXT5WYNZMRZ"; // <-- Substitua pelo token do tipo Personal OAuth (não a API Key pública)
+
+  async function buscarEventos() {
+    try {
+      const resposta = await fetch("https://www.eventbriteapi.com/v3/events/search/?q=mobilidade&location.address=sao+paulo&expand=venue", {
+        headers: {
+          "Authorization": token
+        }
+      });
+
+      if (!resposta.ok) {
+        throw new Error(`Erro ${resposta.status}: ${resposta.statusText}`);
+      }
+
+      const dados = await resposta.json();
+      console.log("Dados recebidos:", dados);
+
+      if (!dados.events || !Array.isArray(dados.events)) {
+        throw new Error("Resposta inesperada da API: 'events' não está presente.");
+      }
+
+      const eventos = dados.events.slice(0, 4);
+      const container = document.getElementById("lista-eventos");
+      container.innerHTML = "";
+
+      if (eventos.length === 0) {
+        container.innerHTML = "<p>Nenhum evento de mobilidade encontrado no momento.</p>";
+        return;
+      }
+
+      eventos.forEach(evento => {
+        const div = document.createElement("div");
+        div.className = "event";
+        div.innerHTML = `
+          <h3>${evento.name.text}</h3>
+          <p><strong>Data:</strong> ${new Date(evento.start.local).toLocaleString("pt-BR")}</p>
+          <p><strong>Local:</strong> ${evento.venue?.address?.localized_address_display || "A definir"}</p>
+          <p>${evento.description.text?.slice(0, 150) || "Descrição não disponível"}...</p>
+          <p><a href="${evento.url}" target="_blank">Ver evento</a></p>
+        `;
+        container.appendChild(div);
+      });
+
+    } catch (erro) {
+      console.error("Erro ao carregar eventos:", erro);
+      document.getElementById("lista-eventos").innerHTML = "<p>Erro ao carregar eventos. Tente novamente mais tarde.</p>";
+    }
+  }
+
+  buscarEventos();
+</script>
+
+</body>
+</html>
