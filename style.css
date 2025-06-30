@@ -545,6 +545,10 @@ footer .container {
 
 @media (max-width: 600px) {
 
+      h2 {
+        text-align: center;
+      }
+
       #lista-eventos{
         display: grid;
       }
@@ -566,12 +570,16 @@ footer .container {
 
      .evento p {
       margin: 0.2rem 0;
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
+
+     #list h3{
+        text-align: center;
+     }
 
      .list-text {
         text-align: justify;
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding: 1rem;
      }
     }
