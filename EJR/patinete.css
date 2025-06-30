@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --main-color: #d9d9d9;
+    --bg: #ffffffdc;
+    --bg-card:#00324A;
+    --border: 0.1rem solid gray;
+    --font1: #41494c;
+    --hover:#288e96;
+    --btn:#36878e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0,2s linear;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%; /*configuração do font size para 62.5%, facilitando o uso do REM (1rem = 10px)*/
+}
+
+.content {
+    max-width: 60rem;
+    position: relative;
+    z-index: 5;
+}
+
+header {
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 7%; /*uso da porcentagem*/
+    border-bottom: var(--border);
+    position: sticky; /*header suspenso*/
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 3rem;
+    color: var(--font1);
+    cursor: pointer;
+}
+
+.logo img {
+    height: 10rem; /*altura da logo*/
+}
+
+.list-menu li {
+    display: inline-block;
+    gap: 3rem;
+}
+
+.list-menu li a {
+    color: var(--font1);
+    font-size: 2.6rem;
+    padding: 1.5rem;
+}
+
+.list-menu li:hover {
+    color: var(--hover); /*mudar a cor do hover*/
+    border-bottom: 0.1rem solid var(--hover);
+    padding-bottom: 0.5rem;
+}
+
+.submenu {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--main-color);
+    display: none;
+    flex-direction: column;
+    min-width: 15rem;
+}
+
+.submenu:hover .dropdown {
+    display: flex;
+}
+
+.dropdown li a {
+    padding: 1rem;
+    text-align: left;
+    font-size: 1.5rem;
+    color: var(--font1)
+}
+

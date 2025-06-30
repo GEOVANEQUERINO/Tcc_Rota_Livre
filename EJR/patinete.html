@@ -5,34 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="patinete.css">
 
 </head>
 
 <body>
 
-    <!-- CABEÇALHO -->
+    <!-- HEADER -->
     <header>
         <div class="logo">
             <img src="img/logo.png" alt="Logo Rota Livre">
         </div>
 
-        <nav>
-            <div class="menu">
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav id="menu">
+            <div class="list-menu">
                 <ul>
                     <li>
-                        <a href="#">HOME</a>
+                        <a href="../index.html">Home</a>
                     </li>
 
-                    <li>
-                        <a href="#">SOBRE</a>
+                    <li class="submenu">
+                        <a href="#">Eventos<i class="fas fa-caret-down"></i></a>
                     </li>
 
-                    <li>
-                        <a href="#">SERVIÇOS</a>
-                    </li>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="">Passeios Coletivos</a>
+                        </li>
+
+                        <li>
+                            <a href="event.html">Eventos</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Aulas Gratuitas</a>
+                        </li>
+                    </ul>
 
                     <li>
-                        <a href="#">CONTATO</a>
+                        <a href="../sobre.html">Sobre Nós</a>
                     </li>
                 </ul>
 
@@ -42,22 +57,12 @@
 
 
             </div>
+
+
         </nav>
-
-
-
-
-
-
-
-
-
-
-
-
     </header>
 
-    <!-- 1º SESSÃO -->
+    <!-- 1º SESSÃO - CARROSSEL -->
     <section class="img1">
         <!-- img -->
     </section>
@@ -139,7 +144,7 @@
             </div>
 
             <div class="content-1">
-                <h4 class="title-footer">SIGA <span>-NÓS</span></h4>
+                <h4 class="title-footer">SIGA <span>- NÓS</span></h4>
 
                 <div class="social-links">
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -155,7 +160,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="patinete.js"></script>
 </body>
 
 </html>
