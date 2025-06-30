@@ -322,14 +322,106 @@ footer .container {
     margin-top: 2rem; /*Adiciona espaço acima do roda pé*/
     color: #ccc;/*define a cor do texto como cinza*/
 }
-
-@media(max-width: 768px) {
-    /* Ajustes gerais */
-    html{
-       font-size: 1rem; 
-    }
-    .diversao .star h1{
-         font-size: 2.3rem;
+@media (max-width: 768px) {
+    html {
+        font-size: 55%; /* Reduz ligeiramente o tamanho da fonte base */
     }
 
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        height: 8rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav#menu {
+        display: none;
+        width: 100%;
+    }
+
+    nav#menu.active {
+        display: block;
+    }
+
+    .list-menu {
+        width: 100%;
+    }
+
+    .list-menu ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .list-menu li {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 1rem 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .dropdown {
+        position: static;
+    }
+
+    .swiper {
+        height: auto;
+        padding: 10rem 1rem;
+    }
+
+    .submenu {
+        font-size: 2rem;
+    }
+
+    .diversao02 {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 3rem;
+    }
+
+    .box-01 h2 {
+        font-size: 4rem;
+    }
+
+    .box-01 p {
+        font-size: 1.6rem;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .caixa {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-02 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .box {
+        grid-template-columns: 1fr; /* Uma única coluna */
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+    }
 }
+
+

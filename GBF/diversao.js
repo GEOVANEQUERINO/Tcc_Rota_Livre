@@ -3,12 +3,12 @@
 
 // MENU HAMBURGUER
 
-const toggle = document.getElementById('menu-toggle');
-const menu = document.getElementById('menu');
+//const toggle = document.getElementById('menu-toggle');
+//const menu = document.getElementById('menu');
 
-toggle.addEventListener('click', () => {
-  menu.classList.toggle('active');
-});
+//toggle.addEventListener('click', () => {
+  //menu.classList.toggle('active');
+//});
 
 
 
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         strings: ["Você quer se divertir e não sabe?"],
                         typeSpeed: 50,
                         showCursor: true,
-                        cursorChar: "|",
+                        cursorChar: "",
                         loop: false,
                         onComplete: () => {
                             typedP = new Typed("#typed-p", {
