@@ -5,39 +5,31 @@
 :root {
     --main-color: #d9d9d9;
     --bg: #ffffffdc;
-    --bg-card: #00324A;
+    --bg-card:#00324A;
     --border: 0.1rem solid gray;
     --font1: #41494c;
-    --hover: #288e96;
-    --btn: #36878e;
+    --hover:#288e96;
+    --btn:#36878e;
 }
 
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    /**/
+    box-sizing: border-box;/**/
     font-family: 'Roboto', 'sans-serif';
     text-decoration: none;
     list-style: none;
-    text-transform: capitalize;
-    /**/
-    transition: 0.2s linear;
-    /**/
-    outline: none;
-    /**/
-    border: none;
-    /**/
-    scroll-behavior: smooth;
-    /*habilita a rolagem de tel mais suave*/
+    text-transform: capitalize;/**/
+    transition: 0.2s linear; /**/
+    outline: none;/**/
+    border: none;/**/
+    scroll-behavior: smooth;/*habilita a rolagem de tel mais suave*/
 }
 
 html {
-    font-size: 62.5%;
-    /*Configuração do font-size para 62.5% facilitando o uso do REM (1rem = 10px)*/
-    overflow-x: hidden;
-    /**/
+    font-size: 62.5%; /*Configuração do font-size para 62.5% facilitando o uso do REM (1rem = 10px)*/
+    overflow-x: hidden;/**/
 }
 
 body {
@@ -51,15 +43,69 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 7%;
-    /*Uso da porcentagem*/
+    padding: 1.5rem 7%; /*Uso da porcentagem*/
     border-bottom: var(--border);
-    position: sticky;
-    /*deixa o header suspenso*/
+    position: sticky; /*deixa o header suspenso*/
     top: 0;
     left: 0;
     z-index: 999;
 }
+
+.menu-toggle {
+  display: none;
+  font-size: 3rem;
+  color: var(--font1);
+  cursor: pointer;
+}
+
+.logo img{
+    height: 10rem;/*define altura do logo*/
+
+}
+
+.list-menu li {
+    display:inline-block;
+    gap: 3rem;
+}
+
+.list-menu li a {
+    color: var(--font1);
+    font-size: 2.6rem;
+    padding: 1.5rem;
+}
+
+.list-menu li:hover {
+    color: var(--hover); /*muda a cor do hover*/
+    border-bottom: 0.1rem solid var(--hover);/*Adiciona uma linha inferior no hover*/
+    padding-bottom: 0.5rem;/*adicionja espaçamento inferior no hover*/
+}
+
+.submenu {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--main-color);
+  display: none;
+  flex-direction: column;
+  min-width: 15rem;
+}
+
+.submenu:hover .dropdown {
+  display: flex;
+}
+
+.dropdown li a {
+  padding: 1rem;
+  color: var(--font1);
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+/* *************************************************************************** */
 
 /* Estilizando a SECTION*/
 .swiper {
@@ -109,7 +155,6 @@ header {
 }
 
 .list-menu ul {
-    display: flex;
     gap: 3rem;
 }
 
@@ -286,8 +331,5 @@ footer .container {
     .diversao .star h1{
          font-size: 2.3rem;
     }
-    .{
-        flex-direction: column;
-        align-items: center;
-    }
+
 }

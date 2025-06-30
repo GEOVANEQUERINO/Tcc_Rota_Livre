@@ -108,3 +108,28 @@ revelar.reveal('.social-links', {
   distance: '90px',
   origin: 'right'
 });
+
+// LISTA MOVA-SE
+
+ fetch('./eventos.json')
+      .then(res => res.json())
+      .then(eventos => {
+        const container = document.getElementById('lista-eventos');
+        eventos.forEach(evento => {
+          const div = document.createElement('div');
+          div.className = 'evento';
+          div.innerHTML = `
+            <img src="${evento.imagem}" alt="${evento.nome}">
+            <div class="evento-info">
+              <h2>${evento.nome}</h2>
+              <p><strong>Local:</strong> ${evento.local}</p>
+              <p><strong>Data e Hora:</strong> ${new Date(evento.dataHora).toLocaleString('pt-BR')}</p>
+            </div>
+          `;
+          container.appendChild(div);
+        });
+      })
+      .catch(err => {
+        document.getElementById('lista-eventos').innerHTML = '<p>Erro ao carregar eventos.</p>';
+        console.error('Erro:', err);
+      });

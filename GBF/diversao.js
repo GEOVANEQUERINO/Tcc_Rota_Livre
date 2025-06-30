@@ -1,3 +1,19 @@
+
+// HEADER
+
+// MENU HAMBURGUER
+
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
+
+
+
+
+
 //carrossel automatico sem botao nem 
 
 const swiper = new Swiper('.swiper', {

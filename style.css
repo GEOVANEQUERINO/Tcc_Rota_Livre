@@ -224,6 +224,60 @@ h2 {
     height: 10rem;
 }
 
+/* 3ª sessão MOVA_SE */
+
+    #list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h3 {
+      font-size: 5rem;
+      color: var(--font1);
+    }
+
+    .list-text{
+       font-size: 2.5rem;
+       margin-bottom: 1.5rem;
+       color: var(--font1);
+    }
+
+    #lista-eventos {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: auto;
+      padding: 1rem;
+    }
+    .evento {
+      border: 1px solid #59ad96;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background-color: #f5f5f5;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+    .evento img {
+      width: 120px;
+      height: 150px;
+      object-fit: cover; /* a imagem mantem sua proporção e preenche a dimenção*/
+      border-radius: 8px;
+    }
+    .evento-info {
+      flex: 1;
+    }
+    .evento h2 {
+      margin: 0 0 0.5rem 0;
+      color: #59ad96;
+    }
+    .evento p {
+      margin: 0.2rem 0;
+    }
+
+/* 4ª sessão */
 /* ESTILIZANDO AS CAIXAS DIV QUE GUARDAM AS IMAGENS*/
 
 .depoimentos h3 {
@@ -487,6 +541,39 @@ footer .container {
         font-size: 1.7rem;
     }
 }
+
+@media (max-width: 600px) {
+
+      #lista-eventos{
+        display: grid;
+      }
+      .evento {
+        flex-direction: column;
+        align-items: center;
+      }
+      .evento img {
+        width: 100%;
+        height: auto;
+      }
+
+      .evento h2 {
+        margin: 0 0 0.5rem 0;
+        color: #59ad96;
+        font-size: 4rem;
+
+     }
+
+     .evento p {
+      margin: 0.2rem 0;
+      font-size: 1.5rem;
+    }
+
+     .list-text {
+        text-align: justify;
+        font-size: 1.5rem;
+        padding: 1rem;
+     }
+    }
 
 @media (max-width: 480px) {
 

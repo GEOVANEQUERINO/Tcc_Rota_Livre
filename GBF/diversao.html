@@ -1,41 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Passeios | Rota LIvre</title>
     <link rel="stylesheet" href="diversao.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="imagem/logo.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/21b9934e7f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- MEU HEADER -->
-    <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="Logomarca Rota Livre" />
-        </div>
-        <nav>
-            <div class="list-menu">
-                <ul>
-                    <li>
-                        <a href="#">HOME</a>
-                    </li>
-                    <li>
-                        <a href="#">SOBRE NóS</a>
-                    </li>
-                    <li>
-                        <a href="#">SERVIÇOS</a>
-                    </li>
-                    <li>
-                        <a href="#">CONTATO</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+   <header>
+    <div class="logo">
+      <img src="imagem/logo.png" alt="Logomarca Rota Livre" />
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav id="menu">
+      <div class="list-menu">
+        <ul>
+            <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="submenu">
+            <a href="#">Modalidades <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="../Victor/bike.html">Bicicletas</a></li>
+              <li><a href="../EJR/patinete.html">Patinetes</a></li>
+              <li><a href="#">Skates</a></li>
+            </ul>
+          </li>
+          <li class="submenu">
+            <a href="#">Eventos <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="diversao.html">Passeios Coletivos</a></li>
+              <li><a href="../Victor/event.html">Eventos</a></li>
+              <li><a href="#">Aulas Gratuitas</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../sobre.html">Sobre nós</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
     <main>
         <section class="diversao swiper">
