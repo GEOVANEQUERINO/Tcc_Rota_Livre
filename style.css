@@ -245,7 +245,7 @@ h2 {
     #lista-eventos {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      gap: 1rem;
       margin: auto;
       padding: 1rem;
     }
@@ -270,6 +270,7 @@ h2 {
       flex: 1;
     }
     .evento h2 {
+    
       margin: 0 0 0.5rem 0;
       color: #59ad96;
     }
@@ -544,6 +545,10 @@ footer .container {
 
 @media (max-width: 600px) {
 
+      h2 {
+        text-align: center;
+      }
+
       #lista-eventos{
         display: grid;
       }
@@ -565,12 +570,16 @@ footer .container {
 
      .evento p {
       margin: 0.2rem 0;
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
+
+     #list h3{
+        text-align: center;
+     }
 
      .list-text {
         text-align: justify;
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding: 1rem;
      }
     }
