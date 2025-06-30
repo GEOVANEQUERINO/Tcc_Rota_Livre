@@ -13,3 +13,9 @@ const swiper = new Swiper('.swiper', {//Inicializa o carerrosel na classe ".swip
 
 });
 
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});

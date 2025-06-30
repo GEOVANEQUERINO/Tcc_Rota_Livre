@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="event.css">
-    <script src="https://kit.fontawesome.com/21b9934e7f.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="event.css">
+  <link rel="stylesheet" href="bike.css">
+  
+  
+  <script src="https://kit.fontawesome.com/21b9934e7f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
 
-<header>
+  <header>
     <div class="logo">
-      <img src="img/logo.png" alt="Logomarca Rota Livre" />
+        <img src="img/logo.png" alt="Logomarca Rota Livre" />
     </div>
     <div class="menu-toggle" id="menu-toggle">
-      <i class="fas fa-bars"></i>
+        <i class="fas fa-bars"></i>
     </div>
     <nav id="menu">
-      <div class="list-menu">
+        <div class="list-menu">
+            <ul>
+                <div class="list-menu">
         <ul>
           <li>
             <a href="../index.html">Home</a>
@@ -36,78 +43,86 @@
           </li>
         </ul>
       </div>
+            </ul>
+        </div>
     </nav>
-  </header>
-
-  
-    <!-- Início da seção de eventos de bicicleta -->
-<section id="eventos-bike" style="font-family: Arial, sans-serif; padding: 2rem; max-width: 800px; margin: auto;">
-
-  <!-- Título da seção -->
-  <h2 style="font-size: 2rem; color: #2c3e50; margin-bottom: 1rem;">
-    Eventos de Ciclismo – São Paulo (Junho e Julho 2025)
-  </h2>
-
-  <!-- Primeiro evento -->
-   
-  <!-- Usamos <article> para marcar cada evento como um conteúdo independente. -->
-  <article style="border-bottom: 1px solid #ccc; padding: 1rem 0;">
-     <!-- style="..." = É um atributo HTML que permite aplicar CSS direto na tag. Esse é chamado de estilo inline. -->
-    <h3>Pedal da Lua Cheia - São Paulo</h3>
-    <p><strong>Data:</strong> 21 de Julho de 2025 (segunda-feira)</p>
-    <p><strong>Local:</strong> Parque do Ibirapuera – Portão 3</p>
-    <p><strong>Horário:</strong> Concentração às 19h, saída às 20h</p>
-    <p><strong>Descrição:</strong> Passeio noturno pelas ciclovias da Zona Sul. Luzes obrigatórias.</p>
-    <p><strong>Organização:</strong> Bike Zona Sul e Pedal Ibirapuera</p>
-  </article>
-
-  <!-- Segundo evento -->
-  <article style="border-bottom: 1px solid #ccc; padding: 1rem 0;">
-     <!-- style="..." = É um atributo HTML que permite aplicar CSS direto na tag. Esse é chamado de estilo inline. -->
-    <h3>CicloFaixa de Lazer – Edição de Férias</h3>
-    <p><strong>Datas:</strong> Domingos: 7, 14, 21 e 28 de Julho</p>
-    <p><strong>Local:</strong> Avenida Paulista e outras ciclofaixas interligadas</p>
-    <p><strong>Horário:</strong> Das 7h às 16h</p>
-    <p><strong>Descrição:</strong> Vias fechadas para uso exclusivo de bicicletas e atividades recreativas.</p>
-    <p><strong>Observação:</strong> Evento gratuito e aberto ao público</p>
-  </article>
-
-  <!-- Terceiro evento -->
-  <article style="border-bottom: 1px solid #ccc; padding: 1rem 0;">
-     <!-- style="..." = É um atributo HTML que permite aplicar CSS direto na tag. Esse é chamado de estilo inline. -->
-    <h3>Desafio Subida da Cantareira</h3>
-    <p><strong>Data:</strong> 14 de Julho de 2025 (domingo)</p>
-    <p><strong>Local:</strong> Horto Florestal até Pedra Grande</p>
-    <p><strong>Horário:</strong> Início às 6h30</p>
-    <p><strong>Descrição:</strong> Subida desafiadora com apoio mecânico e pontos de hidratação ao longo do percurso.</p>
-    <p><strong>Inscrições:</strong> via Instagram @pedalaventura</p>
-  </article>
-
-  <!-- Quarto evento -->
-  <article style="border-bottom: 1px solid #ccc; padding: 1rem 0;">
-     <!-- style="..." = É um atributo HTML que permite aplicar CSS direto na tag. Esse é chamado de estilo inline. -->
-    <h3>Pedal Noturno – Zona Leste</h3>
-    <p><strong>Datas:</strong> 11 e 25 de Julho de 2025 (quintas-feiras)</p>
-    <p><strong>Local:</strong> Shopping Aricanduva (estacionamento externo)</p>
-    <p><strong>Horário:</strong> Concentração às 19h, saída às 20h</p>
-    <p><strong>Descrição:</strong> Passeio para iniciantes, com percurso de aproximadamente 20km.</p>
-    <p><strong>Organização:</strong> Grupo Bike Zona Leste</p>
-  </article>
-
-  <!-- Quinto evento -->
-  <article style="padding: 1rem 0;">
-     <!-- style="..." = É um atributo HTML que permite aplicar CSS direto na tag. Esse é chamado de estilo inline. -->
-    <h3>Pedal Verde - Trilha e Ação Ambiental</h3>
-    <p><strong>Data:</strong> 20 de Julho de 2025 (domingo)</p>
-    <p><strong>Local:</strong> Parelheiros - Zona Sul de São Paulo</p>
-    <p><strong>Horário:</strong> 8h</p>
-    <p><strong>Descrição:</strong> Pedalada com plantio de árvores nativas ao final. Atividade com apoio da prefeitura.</p>
-    <p><strong>Contato:</strong> Instagram @pedalverde_sp</p>
-  </article>
-  <!-- A tag <strong> destaca um texto importante, com significado semântico, e o deixa em negrito por padrão -->
+</header>
 
 
-<!--  Usamos <article> em vez de <div> porque este bloco de conteúdo é completo e faz sentido por si só.
+  <!-- Início da seção de eventos de bicicleta -->
+  <section id="eventos-bike" style="font-family: Arial, sans-serif; padding: 2rem; max-width: 800px; margin: auto;">
+
+    <!-- Título da seção -->
+    <h2 style="font-size: 2rem; color: #2c3e50; margin-bottom: 1rem;">
+      Eventos de Ciclismo – São Paulo (Junho e Julho 2025)
+    </h2>
+
+    <!-- Primeiro evento -->
+
+    <!-- Usamos <article> para marcar cada evento como um conteúdo independente. -->
+    <article style="border-bottom: 1px solid #ccc; padding: 1rem 0;">
+      <!-- style="..." = É um atributo HTML que permite aplicar CSS direto na tag. Esse é chamado de estilo inline. -->
+      <h3>Pedal da Lua Cheia - São Paulo</h3>
+      <p><strong>Data:</strong> 21 de Julho de 2025 (segunda-feira)</p>
+      <p><strong>Local:</strong> Parque do Ibirapuera – Portão 3</p>
+      <p><strong>Horário:</strong> Concentração às 19h, saída às 20h</p>
+      <p><strong>Descrição:</strong> Passeio noturno pelas ciclovias da Zona Sul. Luzes obrigatórias.</p>
+      <p><strong>Organização:</strong> Bike Zona Sul e Pedal Ibirapuera</p>
+    </article>
+
+    <!-- Segundo evento -->
+    <article style="border-bottom: 1px solid #ccc; padding: 1rem 0;">
+      <!-- style="..." = É um atributo HTML que permite aplicar CSS direto na tag. Esse é chamado de estilo inline. -->
+      <h3>CicloFaixa de Lazer – Edição de Férias</h3>
+      <p><strong>Datas:</strong> Domingos: 7, 14, 21 e 28 de Julho</p>
+      <p><strong>Local:</strong> Avenida Paulista e outras ciclofaixas interligadas</p>
+      <p><strong>Horário:</strong> Das 7h às 16h</p>
+      <p><strong>Descrição:</strong> Vias fechadas para uso exclusivo de bicicletas e atividades recreativas.</p>
+      <p><strong>Observação:</strong> Evento gratuito e aberto ao público</p>
+    </article>
+
+    <!-- Terceiro evento -->
+    <article style="border-bottom: 1px solid #ccc; padding: 1rem 0;">
+      <!-- style="..." = É um atributo HTML que permite aplicar CSS direto na tag. Esse é chamado de estilo inline. -->
+      <h3>Desafio Subida da Cantareira</h3>
+      <p><strong>Data:</strong> 14 de Julho de 2025 (domingo)</p>
+      <p><strong>Local:</strong> Horto Florestal até Pedra Grande</p>
+      <p><strong>Horário:</strong> Início às 6h30</p>
+      <p><strong>Descrição:</strong> Subida desafiadora com apoio mecânico e pontos de hidratação ao longo do percurso.
+      </p>
+      <p><strong>Inscrições:</strong> via Instagram @pedalaventura</p>
+    </article>
+
+    <!-- Quarto evento -->
+    <article style="border-bottom: 1px solid #ccc; padding: 1rem 0;">
+      <!-- style="..." = É um atributo HTML que permite aplicar CSS direto na tag. Esse é chamado de estilo inline. -->
+      <h3>Pedal Noturno – Zona Leste</h3>
+      <p><strong>Datas:</strong> 11 e 25 de Julho de 2025 (quintas-feiras)</p>
+      <p><strong>Local:</strong> Shopping Aricanduva (estacionamento externo)</p>
+      <p><strong>Horário:</strong> Concentração às 19h, saída às 20h</p>
+      <p><strong>Descrição:</strong> Passeio para iniciantes, com percurso de aproximadamente 20km.</p>
+      <p><strong>Organização:</strong> Grupo Bike Zona Leste</p>
+    </article>
+
+    <!-- Quinto evento -->
+    <article style="padding: 1rem 0;">
+      <!-- style="..." = É um atributo HTML que permite aplicar CSS direto na tag. Esse é chamado de estilo inline. -->
+      <h3>Pedal Verde - Trilha e Ação Ambiental</h3>
+      <p><strong>Data:</strong> 20 de Julho de 2025 (domingo)</p>
+      <p><strong>Local:</strong> Parelheiros - Zona Sul de São Paulo</p>
+      <p><strong>Horário:</strong> 8h</p>
+      <p><strong>Descrição:</strong> Pedalada com plantio de árvores nativas ao final. Atividade com apoio da
+        prefeitura.</p>
+      <p><strong>Contato:</strong> Instagram @pedalverde_sp</p>
+    </article>
+
+    <div class="bit-buttom">
+      <a href="bike.html" class="btn">PEDALADAS</a>
+    </div>
+    <!-- A tag <strong> destaca um texto importante, com significado semântico, e o deixa em negrito por padrão -->
+
+
+    <!--  Usamos <article> em vez de <div> porque este bloco de conteúdo é completo e faz sentido por si só.
   O <article> informa ao navegador, ao Google e aos leitores de tela que este é um conteúdo independente,
   como um evento, uma notícia ou um post. Isso melhora a acessibilidade e a organização semântica do HTML.
 
@@ -118,49 +133,48 @@
     <article> = conteúdo com sentido completo (ideal para eventos, posts, produtos, etc.)
     <div>     = agrupamento genérico (usado só para layout ou organização visual) -->
 
-</section>
-<!-- Fim da seção -->
+  </section>
+  <!-- Fim da seção -->
 
- <footer>
-  <div class="container">
-    <div class="content-1">
-      <h4 class="title-footer">ROTA LIVRE</h4>
-      <ul>
-        <li><a href="#">Sobre Nós</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Política Privacidade</a></li>
-        <li><a href="#">Termos De Serviço</a></li>
-      </ul>
-    </div>
+  <footer>
+    <div class="container">
+      <div class="content-1">
+        <h4 class="title-footer">ROTA LIVRE</h4>
+        <ul>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Política Privacidade</a></li>
+          <li><a href="#">Termos De Serviço</a></li>
+        </ul>
+      </div>
 
-    <div class="content-1">
-      <h4 class="title-footer">OBTENHA AJUDA</h4>
-      <ul>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Devoluções</a></li>
-        <li><a href="#">Opções De Pagamento</a></li>
-      </ul>
-    </div>
+      <div class="content-1">
+        <h4 class="title-footer">OBTENHA AJUDA</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Devoluções</a></li>
+          <li><a href="#">Opções De Pagamento</a></li>
+        </ul>
+      </div>
 
-    <div class="content-1">
-      <h4 class="title-footer">SIGA-NOS</h4>
-      <div class="social-links">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <div class="content-1">
+        <h4 class="title-footer">SIGA-NOS</h4>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="footer-bottom">
-    <p>&copy; 2025. ROTA LIVRE Todos Direitos Reservado</p>
-  </div>
-</footer>
+    <div class="footer-bottom">
+      <p>&copy; 2025. ROTA LIVRE Todos Direitos Reservado</p>
+    </div>
+  </footer>
 
-  
+  <script src="/script.js"></script>
+
 </body>
 
 </html>
-
-

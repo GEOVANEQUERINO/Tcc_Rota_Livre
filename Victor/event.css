@@ -208,6 +208,8 @@ footer .container {
   color: var(--hover);
 }
 
+
+
 .social-links {
   display: flex;
   justify-content: center;
@@ -232,6 +234,38 @@ footer .container {
   margin-top: 2rem;
   padding-top: 1rem;
   color: #ccc;
+}
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+      display: block;
+  }
+
+  nav {
+      display: none;
+      width: 100%;
+  }
+
+  nav.active {
+      display: block;
+  }
+
+  .list-menu ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 2rem 0;
+  }
+
+  .list-menu ul li a {
+      font-size: 2rem;
+  }
+
+  .list-menu ul li a:hover {
+      color: black;
+  }
+
 }
 
 
