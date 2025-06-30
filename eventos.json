@@ -11,12 +11,7 @@
     "dataHora": "2025-07-10 10:00",
     "imagem": "./img/pedalada_noturna.png"
   },
-  {
-    "nome": "Passeio Noturno",
-    "local": "Parque Ibirapuera",
-    "dataHora": "2025-07-05 20:00",
-    "imagem": "./img/passeio_bike.png"
-  },
+  
   {
     "nome": "Feira da Mobilidade",
     "local": "Av. Paulista",
