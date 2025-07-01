@@ -19,34 +19,89 @@
         <div class="logo">
             <img src="img/logo.png" alt="Logomarca Rota Livre" />
         </div>
-        <div class="menu-toggle" id="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
-        <nav id="menu">
-            <div class="list-menu">
-                <ul>
+        <!--  
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav id="menu">
+      <div class="list-menu">
+        <ul>
+          <li class="submenu">
+            <a href="#">Modalidades <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="Victor/bike.html">Bicicletas</a></li>
+              <li><a href="EJR/patinete.html">Patinetes</a></li>
+              <li><a href="#">Skates</a></li>
+            </ul>
+          </li>
+          <li class="submenu">
+            <a href="#">Eventos <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="GBF/diversao.html">Passeios Coletivos</a></li>
+              <li><a href="#">Workshops</a></li>
+              <li><a href="#">Aulas Gratuitas</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="sobre.html">Sobre nós</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    -->
+        <nav class="navbar">
+            <!-- Criamos nossas Listas quando tiver em formato Desktop -->
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="submenu">
+                    <a href="#">Modalidades <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="Victor/bike.html">Bicicletas</a></li>
+                        <li><a href="EJR/patinete.html">Patinetes</a></li>
+                        <li><a href="#">Skates</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#">Eventos <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="GBF/diversao.html">Passeios</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Workshops</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Criamos nossa caixa (DIV) para guardar os elementos do Hamburguer quando estiver aberto -->
+            <div class="mobile-menu" id="mobileMenu">
+
+                <!-- Botão para ser utilizado para fechamento da lista -->
+                <button id="closeButton" class="close">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <!-- Essa lista é do Menu Hamburguer quando estiver aberto. -->
+                <ul class="nav-links-mobile">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="./Victor/bike.html">Modalidade</a>
                     </li>
-                    <li class="submenu">
-                        <a href="#">Modalidades <i class="fas fa-caret-down"></i></a>
-                        <ul class="dropdown">
-                            <li><a href="Victor/bike.html">Bicicletas</a></li>
-                            <li><a href="EJR/patinete.html">Patinetes</a></li>
-                            <li><a href="#">Skates</a></li>
-                        </ul>
+                    <li>
+                        <a href="./GBF/diversao.html">Eventos</a>
                     </li>
-                    <li class="submenu">
-                        <a href="#">Eventos <i class="fas fa-caret-down"></i></a>
-                        <ul class="dropdown">
-                            <li><a href="GBF/diversao.html">Passeios Coletivos</a></li>
-                            <li><a href="#">Workshops</a></li>
-                            <li><a href="#">Aulas Gratuitas</a></li>
-                        </ul>
+                    <li>
+                        <a href="./index.html">Home</a>
                     </li>
                 </ul>
+                <!-- Fim da caixa do Menu Hamburguer (Quando estiver aberto) -->
             </div>
+
+            <!-- Botão de Hamburguer, ele está fora da Div justamente por ser um elemento singular -->
+            <button class="hamburger" id="hamburgerButton">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Fim do Menu de Navegação -->
         </nav>
+
     </header>
 
     <!-- CONTEUDO PRINCIPAL -->
