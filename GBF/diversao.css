@@ -367,6 +367,7 @@ footer .container {
     .swiper {
         height: auto;
         padding: 10rem 1rem;
+        overflow: hidden;
     }
 
     .submenu {
