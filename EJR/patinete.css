@@ -3,11 +3,11 @@
 :root {
     --main-color: #d9d9d9;
     --bg: #ffffffdc;
-    --bg-card:#00324A;
+    --bg-card: #00324A;
     --border: 0.1rem solid gray;
     --font1: #41494c;
-    --hover:#288e96;
-    --btn:#36878e;
+    --hover: #288e96;
+    --btn: #36878e;
 }
 
 * {
@@ -17,14 +17,15 @@
     font-family: 'Roboto', 'sans-serif';
     text-decoration: none;
     text-transform: capitalize;
-    transition: 0,2s linear;
+    transition: 0, 2s linear;
     outline: none;
     border: none;
     scroll-behavior: smooth;
 }
 
 html {
-    font-size: 62.5%; /*configuração do font size para 62.5%, facilitando o uso do REM (1rem = 10px)*/
+    font-size: 62.5%;
+    /*configuração do font size para 62.5%, facilitando o uso do REM (1rem = 10px)*/
 }
 
 .content {
@@ -37,10 +38,12 @@ header {
     background: var(--main-color);
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 1.5rem 7%; /*uso da porcentagem*/
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    /*uso da porcentagem*/
     border-bottom: var(--border);
-    position: sticky; /*header suspenso*/
+    position: sticky;
+    /*header suspenso*/
     top: 0;
     left: 0;
     z-index: 999;
@@ -54,7 +57,8 @@ header {
 }
 
 .logo img {
-    height: 10rem; /*altura da logo*/
+    height: 10rem;
+    /*altura da logo*/
 }
 
 .list-menu li {
@@ -69,7 +73,8 @@ header {
 }
 
 .list-menu li:hover {
-    color: var(--hover); /*mudar a cor do hover*/
+    color: var(--hover);
+    /*mudar a cor do hover*/
     border-bottom: 0.1rem solid var(--hover);
     padding-bottom: 0.5rem;
 }
@@ -99,3 +104,278 @@ header {
     color: var(--font1)
 }
 
+.swiper{
+    height: 50rem;
+    position: relative;
+}
+
+.swiper-slide{ /*aqui estamos chamando uma das classes*/
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-text {
+    position: absolute;
+    /*posiciona o elemento de forma absoluta dentro do container pai com position: relative*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*Centraliza o elemento exatamente no meio container (corrigi o deslocamento*/
+    text-align: center;
+    z-index: 10;
+    color: #fff;
+}
+
+.carousel-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.caixa-01 {
+    background-image: url(img/casal-jovem-andando-de-scooters-ao-ar-livre.jpg);
+}
+
+.caixa-02 {
+    background-image: url(img/mulher-jovem-andando-em-uma-scooter-eletrica-na-cidade.jpg);
+}
+
+
+/* SESSÃO 2 */
+.heading{
+    text-align: center;
+    color: var(--bg-card);
+    font-size: 3.8rem;
+    padding: 1.5rem;
+}
+
+.mob-patinete {
+    min-height: 85vh;
+}
+
+.row {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   border: var(--border);
+   background: var(--bg);
+   background-position: relative;
+   min-height: 65vh;
+   padding: 1.0rem;
+   
+}
+
+.row .img-section02{
+    flex: 1 1 45rem;
+    /*Define o tamanho flexível do elemento: 45rem, podendo crescerou encolher, ou seja,
+    faz com que possa ser adptavel para telas grandes e pequenas */
+}
+
+.row .img-section02 img {
+    width: 100%;
+}
+
+content
+.row .content{
+    flex: 1 1 45rem;
+    /*Defini o tamanho flexível do conteúdo: base 45rem, poderá crescer ou diminuir*/
+    padding: 1.2rem;
+    /*adiciona espaçamento interno ao redor do conteúdo  */
+}
+
+.row .content h3{
+    font-size: 3rem;
+    color: var(--font1);
+    padding: 1.2rem;
+}
+
+.row .content p{
+    font-size: 1.6rem;
+    /*Defini o tamanho da fonte para o paragrafo*/
+    color: var(--font1);
+    padding: 1rem 0;
+    /*adiciona espaçamento interno vertical ao texto e as letras zeradas*/
+    line-height: 1.8rem;
+    /*defini o espaçamento entre linhas de um texto*/
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+
+/* EVENTOS ATUAIS */
+.patinete-eventos h3 {
+    text-align: center;
+    color: var(--font1);
+    font-size: 2.8rem;
+    padding: 1rem;
+}
+
+.patinete-eventos h3 span {
+    color: red;
+}
+
+.bit-buttom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.9rem;
+
+}
+
+.btn {
+     padding: 0.9rem 3rem;
+    background-color: var(--btn);
+    color: var(--bg);
+    font-size: 1.8rem;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 1.5rem;
+}
+
+.btn:hover{
+    letter-spacing: 0.2rem;
+    color: var(--color2);
+    transition: 0.8s;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.title-footer{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+.title-footer span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+footer {
+    background: var(--bg-card);
+    text-align: center;
+    padding: 4rem 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 7%;
+    /*adiciona espaçamento interno horizontalusando porcentagem*/
+}
+
+.content-1 {
+    flex: 1 1 25rem;
+    /*define tamanho flexivel com largura minima de 25rem*/
+    margin: 1rem
+        /*adiciona margem ao redor do conteudo*/
+    ;
+}
+
+.content-1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content-1 ul li {
+    margin-bottom: 1rem;
+    /*adiciona espaçamento inferior entre os itens da lista*/
+}
+
+.content-1 ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.content-1 ul li a:hover {
+    color: var(--hover);
+    transition: 0.8s;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-links a i {
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.social-links a i:hover {
+    color: var(--hover);
+    transition: 0.8s;
+}
+
+.footer-bottom {
+    text-align: center;
+    /*centraliza o texto */
+    padding: 1rem 0;
+    /*Adiciona espaçamento interno vertical*/
+    font-size: 1.6rem;
+    /*Define o tamanho da fonte*/
+    border-top: var(--border);
+    /*Adiciona uma borda superior*/
+    margin-top: 2rem;
+    /*Adiciona espaço acima do roda pé*/
+    color: #ccc;
+    /*define a cor do texto como cinza*/
+}
+
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    .list-menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 2rem 0;
+    }
+
+    .list-menu ul li a {
+        font-size: 2rem;
+    }
+
+    .list-menu ul li a:hover {
+        color: black;
+    }
+
+}

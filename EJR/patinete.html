@@ -4,8 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rota Livre - Patinetes</title>
     <link rel="stylesheet" href="patinete.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/1b27331733.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
 
 </head>
 
@@ -24,86 +31,104 @@
         <nav id="menu">
             <div class="list-menu">
                 <ul>
-                    <li>
-                        <a href="../index.html">Home</a>
-                    </li>
+                    <div class="list-menu">
+                        <ul>
+                            <li>
+                                <a href="../index.html">Home</a>
+                            </li>
 
-                    <li class="submenu">
-                        <a href="#">Eventos<i class="fas fa-caret-down"></i></a>
-                    </li>
+                            <li class="submenu">
+                                <a href="#">Eventos<i class="fas fa-caret-down"></i></a>
 
-                    <ul class="dropdown">
-                        <li>
-                            <a href="">Passeios Coletivos</a>
-                        </li>
 
-                        <li>
-                            <a href="event.html">Eventos</a>
-                        </li>
+                                <ul class="dropdown">
+                                    <li>
+                                        <a href="../GBF/diversao.html">Passeios Coletivos</a>
+                                    </li>
 
-                        <li>
-                            <a href="#">Aulas Gratuitas</a>
-                        </li>
-                    </ul>
+                                    <li>
+                                        <a href="event.html">Eventos</a>
+                                    </li>
 
-                    <li>
-                        <a href="../sobre.html">Sobre Nós</a>
-                    </li>
+                                    <li>
+                                        <a href="#">Aulas Gratuitas</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="../sobre.html">Sobre Nós</a>
+                            </li>
+                        </ul>
+                    </div>
                 </ul>
-
-
-
-
-
-
             </div>
-
-
         </nav>
     </header>
 
     <!-- 1º SESSÃO - CARROSSEL -->
-    <section class="img1">
-        <!-- img -->
-    </section>
+    <section class="swiper">
 
-    <!-- 2º SESSÃO -->
-    <section class="section2">
-        <div class="img2">
-            <img src="" alt="">
+        <div class="carousel-text">
+            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+
         </div>
 
-        <div class="divpai-text">
-            <div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide caixa-01"></div>
+            <div class="swiper-slide caixa-02"></div>
+        </div>
+
+    </section>
+
+
+
+    <!-- 2º SESSÃO -->
+    <section class="mob-patinete">
+
+        <h1 class="heading">Mobilidade e <span>Praticidade</span></h1>
+
+        <div class="row">
+
+            <div class="img-section02">
+                <img src="img/ChatGPT Image 1 de jul. de 2025, 12_05_22.png"
+                    alt="imagem de pessoas andando de patinete">
+            </div>
+
+            <div class="content">
                 <h3>1º Encontro Sustentável de Patinetes</h3>
 
                 <p>Recarregue as baterias e venha participar de um passeio coletivo cheio de consciência e energia boa!
                     O
                     Encontro Sustentável de Patinetes é uma forma divertida de incentivar a mobilidade limpa e o cuidado
-                    com
-                    o meio ambiente.</p>
+                    com o meio ambiente.</p>
 
                 <p>Vamos rodar juntos por ciclovias e ruas da cidade com música, fotos, brindes ecológicos e uma vibe
                     incrível. Traga seu patinete ou alugue no local e venha fazer parte desse movimento verde!
                 </p>
             </div>
         </div>
+
     </section>
 
 
     <!-- 3º SESSÃO -->
-    <section class="eventos-atuais">
+    <section class="patinete-eventos">
         <h3>EVENTOS <span>ATUAIS</span></h3>
 
-        <div>
-            <!-- IMG -->
+        <div class="bit-buttom">
+            <a href="event.html" class="btn">EVENTOS</a>
+        </div>
+
+        <div class="div-img">
+            <img src="" alt="imagem de pessoas com patinete">
         </div>
     </section>
 
 
     <!-- RODAPÉ  -->
     <footer>
-        <div class="content">
+        <div class="container">
             <div class="content-1">
                 <h4 class="title-footer">ROTA <span>LIVRE</span></h4>
 
@@ -111,17 +136,14 @@
                     <li>
                         <a href="#">Sobre nós</a>
                     </li>
-
                     <li>
                         <a href="#">Menu</a>
                     </li>
-
                     <li>
-                        <a href="#">Politica de Privacidade</a>
+                        <a href="#">Politica privacidade</a>
                     </li>
-
                     <li>
-                        <a href="#">Termos de Serviço</a>
+                        <a href="#">Termos de serviço</a>
                     </li>
                 </ul>
             </div>
@@ -132,20 +154,17 @@
                     <li>
                         <a href="#">FAQ</a>
                     </li>
-
                     <li>
                         <a href="#">Devoluções</a>
                     </li>
-
                     <li>
-                        <a href="#">Opções de Pagamento</a>
+                        <a href="#">Opções de pagamento</a>
                     </li>
                 </ul>
             </div>
 
             <div class="content-1">
-                <h4 class="title-footer">SIGA <span>- NÓS</span></h4>
-
+                <h4 class="title-footer">Siga <span>- nos</span></h4>
                 <div class="social-links">
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -154,11 +173,22 @@
                 </div>
             </div>
         </div>
-
         <div class="footer-bottom">
-            <p>&copy; 2025. ROTA LIVRE Todos Direitos Reservados</p>
+            <p>&copy; 2025. ROTA LIVRE Todos Direitos Reservado</p>
         </div>
     </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
 
     <script src="patinete.js"></script>
 </body>
