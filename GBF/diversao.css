@@ -328,8 +328,8 @@ footer .container {
     }
 
     header {
-        flex-direction: column;
-        align-items: flex-start;
+       display: flex;
+        align-items: center;
     }
 
     .logo img {
@@ -340,35 +340,28 @@ footer .container {
         display: block;
     }
 
-    nav#menu {
+     nav {
         display: none;
         width: 100%;
     }
 
-    nav#menu.active {
+    nav.active {
         display: block;
-    }
-
-    .list-menu {
-        width: 100%;
     }
 
     .list-menu ul {
-        display: flex;
         flex-direction: column;
-        width: 100%;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 2rem 0;
     }
 
-    .list-menu li {
-        display: block;
-        width: 100%;
-        text-align: left;
-        padding: 1rem 0;
-        border-bottom: 1px solid #ccc;
+    .list-menu ul li a {
+        font-size: 2rem;
     }
 
-    .dropdown {
-        position: static;
+    .list-menu ul li a:hover {
+        color: black;
     }
 
     .swiper {
