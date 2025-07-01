@@ -33,72 +33,71 @@
 
 
 header {
-    background: var(--main-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 7%; /*Uso da porcentagem*/
-    border-bottom: var(--border);
-    position: sticky; /*deixa o header suspenso*/
-    top: 0;
-    left: 0;
-    z-index: 999;
+  background: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 7%; /*Uso da porcentagem*/
+  border-bottom: var(--border);
+  position: sticky; /*deixa o header suspenso*/
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 .menu-toggle {
-  display: none;
-  font-size: 3rem;
-  color: var(--font1);
-  cursor: pointer;
+display: none;
+font-size: 3rem;
+color: var(--font1);
+cursor: pointer;
 }
 
 .logo img{
-    height: 10rem;/*define altura do logo*/
+  height: 10rem;/*define altura do logo*/
 
 }
 
 .list-menu li {
-    display:inline-block;
-    gap: 3rem;
+  display:inline-block;
+  gap: 3rem;
 }
 
 .list-menu li a {
-    color: var(--font1);
-    font-size: 2.6rem;
-    padding: 1.5rem;
+  color: var(--font1);
+  font-size: 2.6rem;
+  padding: 1.5rem;
 }
 
 .list-menu li:hover {
-    color: var(--hover); /*muda a cor do hover*/
-    border-bottom: 0.1rem solid var(--hover);/*Adiciona uma linha inferior no hover*/
-    padding-bottom: 0.5rem;/*adicionja espaçamento inferior no hover*/
+  color: var(--hover); /*muda a cor do hover*/
+  border-bottom: 0.1rem solid var(--hover);/*Adiciona uma linha inferior no hover*/
+  padding-bottom: 0.5rem;/*adicionja espaçamento inferior no hover*/
 }
 
 .submenu {
-  position: relative;
+position: relative;
 }
 
 .dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: var(--main-color);
-  display: none;
-  flex-direction: column;
-  min-width: 15rem;
+position: absolute;
+top: 100%;
+left: 0;
+background: var(--main-color);
+display: none;
+flex-direction: column;
+min-width: 15rem;
 }
 
 .submenu:hover .dropdown {
-  display: flex;
+display: flex;
 }
 
 .dropdown li a {
-  padding: 1rem;
-  color: var(--font1);
-  text-align: left;
-  font-size: 1.5rem;
+padding: 1rem;
+color: var(--font1);
+text-align: left;
+font-size: 1.5rem;
 }
-
 
 /* estilos.css */
 
