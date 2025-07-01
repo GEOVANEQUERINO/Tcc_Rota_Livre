@@ -10,3 +10,9 @@ const swiper = new Swiper('.swiper', {//Inicializa o carerrosel na classe ".swip
     allowTouchMove: false, //Impede que o usuário use o toque (arraste) para o slide 
 
 });
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
