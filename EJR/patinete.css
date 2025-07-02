@@ -49,60 +49,145 @@ header {
     z-index: 999;
 }
 
-.menu-toggle {
-    display: none;
-    font-size: 3rem;
-    color: var(--font1);
-    cursor: pointer;
+.item-menu-header { /* Nossas li que estão dentro do LIST MENU, onde se encontram os nomes dos itens apresentados no HEADER */
+    margin-right: 25px; /* margem da direita */
 }
 
-.logo img {
-    height: 10rem;
-    /*altura da logo*/
+.nav-links li > a:hover { /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO, e o Hover responsável pela modificação de cor ao passar o cursor em cima.*/
+    color: var(--hover); /* Aqui atribuimos uma cor */
+    transition: 1s; /* E o tempo em que será exibido ao passar o cursor */
 }
 
-.list-menu li {
-    display: inline-block;
+.item-menu-header > a { /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO */
+    color: white; /* Cor das letras */
+    text-decoration: none; /* Responsável por tirar o sublinhado inferior que estava visível */
+    font-size: 0.8em; /* Tamanho da letra */
+} 
+
+
+.navbar {
+    color: white; /*Cor da letra*/
+    display: flex; /*Flexíveis*/
+    justify-content: space-between; /*A distribuição dos itens sejam com Space-between*/
+    align-items: center; /*Alinhamento da vertical*/
+    padding: 1rem 1.5rem; /*Preenchimento superior/inferior e esquerda/direita*/
+    height: 2.6rem; /*Altura do NavBar*/
+}
+
+.nav-links { /*Aqui estamos estilizando a UL (lista não ordenada)*/
+    list-style: none; /*Retirando o estilo de lista*/ 
+    display: flex; /*Tornando a caixa flexível, e lado a lado*/
+    margin: 0; /*Zerando os espaços de margem que são habilitados por padrão*/
+    padding: 0; /*Zerando os preenchimentos que são habilitados por padrão*/
     gap: 3rem;
 }
 
-.list-menu li a {
-    color: var(--font1);
-    font-size: 2.6rem;
-    padding: 1.5rem;
+.nav-links li { /*Estilizando nossa LI que está dentro da UL*/
+    padding: 0 8px; /*Preenchimento da LI superior/inferior 0 e laterais em 9px*/
 }
 
-.list-menu li:hover {
+.nav-links a,
+.nav-links-mobile a { /*Estamos chamando as duas âncoras para estilização, tanto da Versão Desktop quanto da versão Mobile.*/
+    color: var(--font1); /*A cor da letra*/
+    text-decoration: none; /*E sem sublinhado*/
+    font-size: 3rem;        
+}
+
+.mobile-menu { /*Estilização da caixa Mobile quando aberta*/
+    display: none; /*Display: Nenhum*/
+    position: fixed; /*Posição fixa na parte direita da página*/
+    top: 0; /*Superior em 0 fazendo a caixa encostar ao topo*/
+    right: 0; /*Direita em 0 fazendo a caixa encostar a direita*/
+    width: 60%; /*Largura em porcentagem da caixa*/
+    height: 40%; /*Altura de 100% da tela*/
+    background-color: var(--bg); /*Cor de fundo*/
+    flex-direction: column; /*direção dos itens dentro da caixa */
+    align-items: center; /*Alinhamento na vertical do itens*/
+    font-size: 1.8rem; /*tamanho da letra dentro da caixa*/
+}
+
+.nav-links-mobile { /*Lista não ordenada da versão mobile*/
+    display: flex; /*Tornando os itens (LISTAS) flexíveis*/
+    flex-direction: column; /*Estamos direcionando o posicionamento dessas listas*/
+    text-align: end; /*Alinhando o texto ao centro*/
+    gap: 1.2rem; /*Espaço entre as listas */
+    /* width: 0%; Zeramos a largura podendo retirar essa linha para testar visualizão */
+    list-style: none; /*Estilo de lista desabilitado*/
+    /* padding: 0; Preenchimento zerado, podendo também ser retirado para testes */
+}
+
+.nav-links-mobile li { /*listas da versão Mobile*/
+    border-bottom: 1px solid #787272; /*Bordar inferior de cada lista*/
+    padding-bottom: 1.2rem; /*Tamanho da borda*/
+}
+
+.nav-links-mobile li a:hover {
+    cursor: pointer;
     color: var(--hover);
-    /*mudar a cor do hover*/
-    border-bottom: 0.1rem solid var(--hover);
-    padding-bottom: 0.5rem;
+}
+
+.hamburger,
+.close { /*Estilizando os botões de abertura e fechamento*/
+    font-size: 3rem; /*Tamanho do elemento*/
+    background: none; /*Removido o Background*/
+    border: none; /*BORDA NENHUMAAAAAAA*/
+    color: var(--font1); /*cor do elemento*/
+    cursor: pointer; /*Cursor Habilitado*/
+    display: none; /*Escondendo os botões*/
+    margin-left: 10rem;
+}
+
+.close {
+    margin-top: 20px;/*Espaçamento superior do X */
+    margin-right: 20px; /*Espaçamento a direita do X*/
+    display: block; /*Formatação da Imagem em bloco*/
+    align-self: end; /*Alinhamento do botão*/
+}
+
+
+.flex { /*ELEMENTO USADO NO JS*/
+    display: flex; /*Tornando item flexível e visível.*/
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 3rem;
+  color: var(--font1);
+  cursor: pointer;
+}
+
+.logo img{
+    height: 10rem;/*define altura do logo*/
+
 }
 
 .submenu {
-    position: relative;
+  position: relative;
+
 }
 
 .dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: var(--main-color);
-    display: none;
-    flex-direction: column;
-    min-width: 15rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--main-color);
+  display: none;
+  flex-direction: column;
+  min-width: 15rem;
 }
 
 .submenu:hover .dropdown {
-    display: flex;
+  display: flex;
 }
 
 .dropdown li a {
-    padding: 1rem;
-    text-align: left;
-    font-size: 1.5rem;
-    color: var(--font1)
+  padding: 1rem;
+  color: var(--font1);
+  text-align: left;
+  font-size: 1.5rem;
+  
 }
+  
 
 .swiper{
     height: 50rem;
